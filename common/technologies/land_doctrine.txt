@@ -36,8 +36,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -80,8 +80,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -135,8 +135,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -186,8 +186,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -231,8 +231,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -287,8 +287,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -341,8 +341,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -390,8 +390,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -449,8 +449,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -502,8 +502,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -553,8 +553,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -594,8 +594,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -635,8 +635,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -680,8 +680,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -720,8 +720,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -758,8 +758,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -803,8 +803,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -845,8 +845,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -894,8 +894,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -942,8 +942,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -986,8 +986,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1032,8 +1032,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1076,8 +1076,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1126,8 +1126,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1172,8 +1172,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1218,8 +1218,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1260,8 +1260,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1299,8 +1299,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1345,8 +1345,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1389,8 +1389,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1441,8 +1441,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1480,8 +1480,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1524,8 +1524,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1566,8 +1566,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 			
@@ -1612,8 +1612,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1661,8 +1661,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1714,8 +1714,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1757,8 +1757,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1803,8 +1803,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1848,8 +1848,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1891,8 +1891,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1932,8 +1932,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -1980,8 +1980,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2029,8 +2029,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2070,8 +2070,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2114,8 +2114,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2158,8 +2158,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2197,8 +2197,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2240,8 +2240,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2282,8 +2282,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2330,8 +2330,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2377,8 +2377,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2420,8 +2420,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2461,8 +2461,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2511,8 +2511,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2559,8 +2559,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2612,8 +2612,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2649,8 +2649,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2700,8 +2700,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2747,8 +2747,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2792,8 +2792,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2842,8 +2842,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}
@@ -2883,8 +2883,8 @@ technologies = {
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
 				OR = {
-					has_ideas = GER_victors_of_wwi
-					has_ideas = rus_divided_staff
+					has_idea = GER_victors_of_wwi
+					has_idea = rus_divided_staff
 				}
 			}
 		}

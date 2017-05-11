@@ -36,7 +36,7 @@ technologies = {
 			factor = 20
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -76,7 +76,7 @@ technologies = {
 			factor = 20
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -116,7 +116,7 @@ technologies = {
 			factor = 20
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -160,7 +160,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -203,7 +203,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -246,7 +246,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -292,7 +292,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -337,7 +337,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -381,7 +381,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -425,7 +425,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -466,7 +466,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -506,7 +506,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -551,7 +551,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -587,7 +587,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -621,7 +621,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -667,7 +667,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 			
 			modifier = {
@@ -711,7 +711,7 @@ technologies = {
 			factor = 20
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -756,7 +756,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -800,7 +800,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -843,7 +843,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -882,7 +882,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -935,7 +935,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -976,7 +976,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -1020,7 +1020,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -1060,7 +1060,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -1100,7 +1100,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -1141,7 +1141,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -1176,7 +1176,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -1221,7 +1221,7 @@ technologies = {
 			factor = 20
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 			
 			modifier = {
@@ -1261,7 +1261,7 @@ technologies = {
 			factor = 20
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -1301,7 +1301,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -1341,7 +1341,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -1385,7 +1385,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -1430,7 +1430,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -1470,7 +1470,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -1511,7 +1511,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -1553,7 +1553,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -1593,7 +1593,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -1634,7 +1634,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
@@ -1669,7 +1669,7 @@ technologies = {
 			factor = 5
 			modifier = { #Decrease weighting if have an idea penalty
 				factor = 0.001
-				has_ideas = GER_victors_of_wwi
+				has_idea = GER_victors_of_wwi
 			}
 		}
 		
