@@ -603,6 +603,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = { #Decrease weighting if complelely landlocked
+				factor = 0.001
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
 			
 			modifier = { #Decrease weighting if ahead
 				factor = 0.001
@@ -627,6 +635,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = { #Decrease weighting if complelely landlocked
+				factor = 0.001
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
 			
 			modifier = { #Decrease weighting if ahead
 				factor = 0.001
@@ -665,6 +681,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = { #Decrease weighting if complelely landlocked
+				factor = 0.001
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
 			
 			modifier = { #Decrease weighting if ahead
 				factor = 0.001
@@ -689,6 +713,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = { #Decrease weighting if complelely landlocked
+				factor = 0.001
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
 			
 			modifier = { #Decrease weighting if ahead
 				factor = 0.001
@@ -727,6 +759,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = { #Decrease weighting if complelely landlocked
+				factor = 0.001
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
 			
 			modifier = { #Decrease weighting if ahead
 				factor = 0.001
@@ -751,6 +791,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = { #Decrease weighting if complelely landlocked
+				factor = 0.001
+				NOT = {
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+			}
 			
 			modifier = { #Decrease weighting if ahead
 				factor = 0.001
