@@ -1,5 +1,5 @@
 garrison_default = {
-	target_width = 29.9
+	target_width = 18.0
 	width_weight = 0.1
 	column_swap_factor = 0.2
 	
@@ -65,7 +65,7 @@ garrison_default = {
 }
 
 militia_default = {
-	target_width = 29.9
+	target_width = 18.0
 	width_weight = 0.1
 	column_swap_factor = 0.2
 	

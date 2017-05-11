@@ -19,12 +19,14 @@ ai_army_building_minimum_puppet = { #Minimum Army Size Enforced - Puppets
 	enable = {
 		has_army_size = { size < 5 }
 		is_subject = yes
+		has_manpower > 30000
 	}	
 	abort = {
 		OR = {
 			NOT = {has_army_size = { size < 5 } }
 			has_war = yes
 			is_subject = no
+			has_manpower < 1000 
 		}
 	}
 	ai_strategy = { 
@@ -39,11 +41,13 @@ ai_army_building_minimum = { #Minimum Army Size Enforced
 		has_army_size = { size < 10 }
 		has_war = no
 		is_subject = no
+		has_manpower > 30000
 	}	
 	abort = { 
 		OR = {
 			NOT = {has_army_size = { size < 10 } }
 			has_war = yes
+			has_manpower < 1000
 		}
 	}
 	ai_strategy = { 
@@ -60,6 +64,7 @@ ai_army_building_20 = { #20 Units
 		has_war = no
 		num_of_factories > 9
 		num_of_factories < 19
+		has_manpower > 30000
 	}	
 	abort = { 
 		OR = {
@@ -67,6 +72,7 @@ ai_army_building_20 = { #20 Units
 			has_war = yes
 			NOT = { num_of_factories > 9 }
 			NOT = { num_of_factories < 19 }
+			has_manpower < 1000
 		}
 	}
 	ai_strategy = { 
@@ -83,6 +89,7 @@ ai_army_building_30 = { #30 Units
 		has_war = no
 		num_of_factories > 19
 		num_of_factories < 29
+		has_manpower > 30000
 	}	
 	abort = { 
 		OR = {
@@ -90,6 +97,7 @@ ai_army_building_30 = { #30 Units
 			has_war = yes
 			NOT = { num_of_factories > 19 }
 			NOT = { num_of_factories < 29 }
+			has_manpower < 1000
 		}
 	}
 	ai_strategy = { 
@@ -106,6 +114,7 @@ ai_army_building_40 = { #40 Units
 		has_war = no
 		num_of_factories > 29
 		num_of_factories < 39
+		has_manpower > 30000
 	}	
 	abort = { 
 		OR = {
@@ -113,6 +122,7 @@ ai_army_building_40 = { #40 Units
 			has_war = yes
 			NOT = { num_of_factories > 29 }
 			NOT = { num_of_factories < 39 }
+			has_manpower < 1000
 		}
 	}
 	ai_strategy = { 
@@ -129,6 +139,7 @@ ai_army_building_50 = { #50 Units
 		has_war = no
 		num_of_factories > 39
 		num_of_factories < 49
+		has_manpower > 30000
 	}	
 	abort = { 
 		OR = {
@@ -136,6 +147,7 @@ ai_army_building_50 = { #50 Units
 			has_war = yes
 			NOT = { num_of_factories > 39 }
 			NOT = { num_of_factories < 49 }
+			has_manpower < 1000
 		}
 	}
 	ai_strategy = { 
@@ -152,6 +164,7 @@ ai_army_building_60 = { #60 Units
 		has_war = no
 		num_of_factories > 49
 		num_of_factories < 59
+		has_manpower > 30000
 	}	
 	abort = { 
 		OR = {
@@ -159,6 +172,7 @@ ai_army_building_60 = { #60 Units
 			has_war = yes
 			NOT = { num_of_factories > 49 }
 			NOT = { num_of_factories < 59 }
+			has_manpower < 1000
 		}
 	}
 	ai_strategy = { 
@@ -175,6 +189,7 @@ ai_army_building_70 = { #70 Units
 		has_war = no
 		num_of_factories > 59
 		num_of_factories < 69
+		has_manpower > 30000
 	}	
 	abort = { 
 		OR = {
@@ -182,6 +197,7 @@ ai_army_building_70 = { #70 Units
 			has_war = yes
 			NOT = { num_of_factories > 59 }
 			NOT = { num_of_factories < 69 }
+			has_manpower < 1000
 		}
 	}
 	ai_strategy = { 
@@ -198,6 +214,7 @@ ai_army_building_80 = { #80 Units
 		has_war = no
 		num_of_factories > 69
 		num_of_factories < 79
+		has_manpower > 30000
 	}	
 	abort = { 
 		OR = {
@@ -205,6 +222,7 @@ ai_army_building_80 = { #80 Units
 			has_war = yes
 			NOT = { num_of_factories > 69 }
 			NOT = { num_of_factories < 79 }
+			has_manpower < 1000
 		}
 	}
 	ai_strategy = { 
@@ -221,6 +239,7 @@ ai_army_building_90 = { #90 Units
 		has_war = no
 		num_of_factories > 79
 		num_of_factories < 89
+		has_manpower > 30000
 	}	
 	abort = { 
 		OR = {
@@ -228,6 +247,7 @@ ai_army_building_90 = { #90 Units
 			has_war = yes
 			NOT = { num_of_factories > 79 }
 			NOT = { num_of_factories < 89 }
+			has_manpower < 1000
 		}
 	}
 	ai_strategy = { 
@@ -244,6 +264,7 @@ ai_army_building_100 = { #100 Units
 		has_war = no
 		num_of_factories > 89
 		num_of_factories < 99
+		has_manpower > 30000
 	}	
 	abort = { 
 		OR = {
@@ -251,6 +272,7 @@ ai_army_building_100 = { #100 Units
 			has_war = yes
 			NOT = { num_of_factories > 89 }
 			NOT = { num_of_factories < 99 }
+			has_manpower < 1000
 		}
 	}
 	ai_strategy = { 
@@ -264,15 +286,16 @@ ai_army_building_150 = { #150 Units
 	enable = {
 		ai_wants_divisions < 150
 		has_army_size = { size < 150 }
-		NOT = { is_subject = yes }
 		has_war = no
 		num_of_factories > 99
+		has_manpower > 30000
 	}	
 	abort = { 
 		OR = {
 			NOT = {has_army_size = { size < 150 } }
 			has_war = yes
 			NOT = { num_of_factories > 99 }
+			has_manpower < 1000
 		}
 	}
 	ai_strategy = { 
@@ -288,17 +311,88 @@ ai_army_building_300 = { # Please Stop Building Units
 		NOT = {has_army_size = { size < 300 }}
 		has_war = no
 		num_of_factories > 99
+		has_manpower > 30000
 	}	
 	abort = { 
 		OR = {
 			has_army_size = { size < 300 }
 			NOT = {num_of_factories > 99}
+			has_manpower < 1000
 		}
 	}
 	ai_strategy = { 
 		type = build_army 
 		id = infantry
 		value = 0		
+	}
+}
+
+ai_army_building_small_stockpile = { # Build if you're sitting on too many guns
+	enable = {
+		ai_wants_divisions < 50
+		has_army_size = { size < 50 }
+		has_equipment = { infantry_equipment > 20000 } 
+		has_war = no
+		has_manpower > 30000
+	}	
+	abort = {  
+		OR = {
+			NOT = {has_army_size = { size < 50 } }
+			has_war = yes
+			NOT = { has_equipment = { infantry_equipment > 20000 }}
+			has_manpower < 1000
+		}
+	}
+	ai_strategy = { 
+		type = build_army 
+		id = infantry
+		value = 50	
+	}
+}
+
+ai_army_building_medium_stockpile = { # Build if you're sitting on too many guns
+	enable = {
+		ai_wants_divisions < 100
+		has_army_size = { size < 100 }
+		has_equipment = { infantry_equipment > 40000 } 
+		has_war = no
+		has_manpower > 30000
+	}	
+	abort = {  
+		OR = {
+			NOT = {has_army_size = { size < 100 } }
+			has_war = yes
+			NOT = { has_equipment = { infantry_equipment > 40000 }}
+			has_manpower < 1000
+		}
+	}
+	ai_strategy = { 
+		type = build_army 
+		id = infantry
+		value = 100	
+	}
+}
+
+ai_army_building_large_stockpile = { # Build if you're sitting on too many guns
+	enable = {
+		ai_wants_divisions < 150
+		has_army_size = { size < 150 }
+		has_equipment = { infantry_equipment > 60000 } 
+		has_war = no
+		has_manpower > 30000
+	}	
+	abort = {  
+		OR = {
+			NOT = {has_army_size = { size < 150 } }
+			has_war = yes
+			NOT = { has_equipment = { infantry_equipment > 60000 }}
+			has_manpower < 1000
+		}
+	}
+	ai_strategy = { 
+		type = build_army 
+		id = infantry
+		value = 150	
 	}
 }
 
