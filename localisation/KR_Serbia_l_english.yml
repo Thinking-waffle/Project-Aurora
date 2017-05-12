@@ -32,6 +32,9 @@ founded_belgradepact:0 "Founded the Belgrade Pact"
 absolute_monarchy:0 "Created an absolute monarchy"
 constitutional_monarchy:0 "Created a constitutional monarchy"
 SER_heavy_fighter_bonus:0 "Heavy Fighter models"
+SER_greater_serbia_tooltip:0 "§GWe will work towards strenghtening Serbia.§!\n\n"
+SER_slavic_federation_tooltip:0 "§GWe will work towards creating a federation of Slavic people under Serbian leadership.§!\n\n"
+SER_form_yugoslavia_tooltip:0 "§GWe form a united nation of southern Slavs.\n\n§!"
 
 ### Focus Tree ###
 
@@ -105,15 +108,15 @@ SER_integrate_bosnia_desc:0 "Bosnia has been added to our nation, but there is s
 SER_claim_dalmatia:0 "Claim Dalmatia"
 SER_claim_dalmatia_desc:0 "Serbia needs access to the Adriatic Sea. Dalmatia would be the best target for expansion in this direction."
 SER_status_of_montenegro:0 "Status of Montenegro"
-SER_status_of_montenegro_desc:0 "Now with our state finally stabilised, we must choose our stance towards the independent state of Montenegro. We can either try to bring them into the fold using the direct threat of military power or via more a subtle way of negotiations. Another option is to create an independent military bloc with Montenegro."
+SER_status_of_montenegro_desc:0 "Montenegro should become a part of Serbia. It will provide us with access to the Adriatic Sea and give us more loyal citizens for our armies. We can also let them nominally keep their independence, but make them dependent on us."
 SER_form_yugoslavia:0 "Form Yugoslavia"
 SER_form_yugoslavia_desc:0 "Serbia has successfully prevailed against everyone who tried to prevent the unification of the western Balkans under our banner. We can now create Yugoslavia to finally unite the Slavic nations of the Balkan peninsula and bring peace to this troubled region!"
-SER_claim_slovenia:0 "Claim Slovenia"
+SER_claim_slovenia:0 "Conquer Slovenia"
 SER_claim_slovenia_desc:0 "We have formed a union of the Slavic people, but the Slovenes still live outside Yugoslavia. We need to bring them into our country too."
 SER_a_serbian_nation:0 "A Serbian Nation"
 SER_a_serbian_nation_desc:0 "Serbia is a nation for the Serbs, and while we tolerate other people living inside our country, we need to make sure we survive as a nation for the Serbian people."
 SER_extra_research_slot_ii:0 "Extra Research Slot"
-SER_extra_research_slot_ii_desc:0 "With our larger country we improve our research into different fields."
+SER_extra_research_slot_ii_desc:0 "With our larger country we can improve our research into different fields."
 
 ### Economy ###
 SER_new_economic_policy:0 "New Economic Policy"
@@ -316,3 +319,9 @@ serbia.15.d:0 "The Orthodox Church, under the leadership of the vocal Patriarch 
 serbia.15.a:0 "Orthodoxy is our state religion."
 serbia.15.b:0 "We are modern and secular!"
 serbia.15.c:0 "The Orthodox Church must have a role in our government."
+
+serbia.16.t:0 "Status of Montenegro"
+serbia.16.d:0 "Now with our state finally stabilized, we must choose our stance towards the independent state of Montenegro. We can either try to bring them into the fold using the direct threat of military power or via more a subtle way of negotiations. Another option is to create an independent military bloc with Montenegro. What shall we do?"
+serbia.16.a:0 "War will solve this!"
+serbia.16.b:0 "Threaten them with force."
+serbia.16.c:0 "Offer an alliance to Montenegro."

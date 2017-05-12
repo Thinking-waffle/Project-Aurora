@@ -3,10 +3,10 @@ focus_tree = {
 
 	country = {
 		factor = 0
-#		modifier = {
-#			add = 10
-#			tag = SER
-#		}
+		modifier = {
+			add = 10
+			tag = SER
+		}
 	}
 
 	default = no
@@ -22,7 +22,7 @@ focus_tree = {
 		x = 1
 		y = 0
 
-		cost = 5
+		cost = 1
 
 		mutually_exclusive = {
 			focus = SER_crown_the_king
@@ -37,7 +37,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-				add_popularity = { ideology = authoritarian_democrat popularity = 0.1 }
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.1 }
 		}
 	}
 
@@ -90,7 +90,7 @@ focus_tree = {
 		x = 4
 		y = 0
 
-		cost = 5
+		cost = 1
 
 		mutually_exclusive = {
 			focus = SER_keep_regent
@@ -326,7 +326,7 @@ focus_tree = {
 		x = 7
 		y = 0
 
-		cost = 5
+		cost = 1
 
 		mutually_exclusive = {
 			focus = SER_crown_the_king
@@ -425,8 +425,6 @@ focus_tree = {
 			has_war = no
 			date > 1937.5.1
 		}
-
-		cancel_if_invalid = yes
 
 		ai_will_do = { factor = 100 }
 
@@ -649,6 +647,14 @@ focus_tree = {
 		prerequisite = { focus = SER_congress_of_belgrade }
 
 		mutually_exclusive = { focus = SER_slavic_federation }
+
+		ai_will_do = { factor = 300 }
+
+		completion_reward = {
+			custom_effect_tooltip = SER_greater_serbia_tooltip
+
+			add_political_power = 100
+		}
 	}
 
 	focus = {
@@ -662,6 +668,21 @@ focus_tree = {
 		prerequisite = { focus = SER_congress_of_belgrade }
 
 		mutually_exclusive = { focus = SER_greater_serbia }
+
+		ai_will_do = {
+			factor = 100
+
+			modifier = {
+				factor = 2
+				NOT = { country_exists = ILL } # Yugoslavia will be the *real* Slavic federation
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SER_slavic_federation_tooltip
+
+			add_political_power = -100
+		}
 	}
 
 	focus = {
@@ -676,6 +697,21 @@ focus_tree = {
 			focus = SER_slavic_federation
 			focus = SER_greater_serbia
 		}
+
+		bypass = { owns_state = 765 }
+
+		completion_reward = {
+			# Create a wargoal against the country that holds Kosovo
+			every_country = {
+				limit = { owns_state = 765 } # Kosovo
+				ROOT = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+					} 
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -688,6 +724,11 @@ focus_tree = {
 
 		prerequisite = { focus = SER_greater_serbia }
 		prerequisite = { focus = SER_reclaim_kosovo }
+
+		available = {
+			owns_state = 765 # Kosovo
+			owns_state = 44 # Tirana
+		}
 	}
 
 	focus = {
@@ -702,6 +743,23 @@ focus_tree = {
 			focus = SER_slavic_federation
 			focus = SER_greater_serbia
 		}
+
+		bypass = { owns_state = 104 }
+
+		completion_reward = {
+			add_state_claim = 104
+			
+			# Create a wargoal against the country that holds Bosnia
+			every_country = {
+				limit = { owns_state = 104 } # Bosnia
+				ROOT = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+					} 
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -713,6 +771,14 @@ focus_tree = {
 		cost = 10
 
 		prerequisite = { focus = SER_free_bosnia }
+
+		available = { owns_state = 104 } # Bosnia
+
+		completion_reward = {
+			add_state_core = 104 # Bosnia
+
+			add_political_power = 100
+		}
 	}
 
 	focus = {
@@ -724,6 +790,24 @@ focus_tree = {
 		cost = 10
 
 		prerequisite = { focus = SER_free_bosnia }
+
+		bypass = { owns_state = 163 }
+
+		completion_reward = {
+			add_state_claim = 163 # Dalmatia
+			add_state_claim = 103 # Lika
+
+			# Create a wargoal against the country that holds Dalmatia
+			every_country = {
+				limit = { owns_state = 163 } # Dalmatia
+				ROOT = {
+					create_wargoal = {
+						target = PREV
+						type = annex_everything
+					} 
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -734,9 +818,22 @@ focus_tree = {
 
 		cost = 10
 
+		bypass = {
+			OR = {
+				owns_state = 105
+				MTN = { is_subject_of = ROOT }
+			}
+		}
+
 		prerequisite = {
 			focus = SER_greater_serbia
 			focus = SER_slavic_federation
+		}
+
+		available = { country_exists = MTN }
+
+		completion_reward = {
+			country_event = { id = serbia.16 hours = 2 }
 		}
 	}
 
@@ -751,6 +848,46 @@ focus_tree = {
 		prerequisite = { focus = SER_slavic_federation }
 		prerequisite = { focus = SER_status_of_montenegro }
 		prerequisite = { focus = SER_claim_dalmatia }
+
+		available = {
+			AND = {
+				owns_state = 109 # Eastern Croatia
+				owns_state = 104 # Bosnia
+			}
+			OR = {
+				owns_state = 105 # Montenegro
+				MTN = { is_subject_of = ROOT }
+			}
+			NOT = {
+				country_exists = ILL
+				country_exists = CRO
+				country_exists = BOS
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = SER_form_yugoslavia_tooltip
+
+			set_cosmetic_tag = SER_YUG
+
+			# Core all Yugoslavian states
+			add_state_core = 794 # Srijem
+			add_state_core = 105 # Montenegro
+			add_state_core = 104 # Bosnia
+			add_state_core = 109 # Croatia
+			add_state_core = 163 # Dalmatia
+			add_state_core = 103 # Lika
+			if = {
+				limit = { owns_state = 102 }
+				add_state_core = 102 # Slovenia
+			}
+
+			# Inherit Montenegro if it is a puppet
+			if = {
+				limit = { MTN = { is_subject_of = ROOT } }
+				annex_country = { target = MTN }
+			}
+		}
 	}
 
 	focus = {
@@ -763,6 +900,26 @@ focus_tree = {
 
 		prerequisite = { focus = SER_form_yugoslavia }
 		prerequisite = { focus = SER_claim_dalmatia }
+
+		bypass = { 102 = { is_core_of = ROOT } } # Slovenia
+
+		completion_reward = {
+			add_state_core = 102
+
+			if = {
+				limit = { NOT = { owns_state = 102 } }
+				# Create a wargoal against the country that holds Slovenia
+				every_country = {
+					limit = { owns_state = 102 } # Slovenia
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							type = annex_everything
+						} 
+					}
+				}
+			}
+		}
 	}
 
 	focus = {

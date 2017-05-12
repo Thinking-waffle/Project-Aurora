@@ -805,9 +805,7 @@ country_event = {
 	trigger = {
 		tag = SER
 
-		NOT = {
-			has_country_leader = { name = "Petar Bojović" }
-		}
+		NOT = { has_country_leader = { name = "Petar Bojović" } }
 		NOT = { has_country_flag = Petar_Bojovic_dead }
 
 		date > 1945.1.1
@@ -938,5 +936,45 @@ country_event = {
 		reverse_add_opinion_modifier = { target = MTN modifier = SER_orthodox_government }
 		reverse_add_opinion_modifier = { target = GRE modifier = SER_orthodox_government }
 		reverse_add_opinion_modifier = { target = UKR modifier = SER_orthodox_government }
+	}
+}
+
+# Status of Montenegro
+country_event = {
+	id = serbia.16
+	title = serbia.16.t
+	desc = serbia.16.d
+
+	is_triggered_only = yes # Triggered by focus
+
+	option = {
+		name = serbia.16.a # War will solve this!
+
+		ai_chance = { factor = 20 }
+
+		add_political_power = -80
+
+		declare_war_on = {
+			target = MTN
+			type = annex_everything
+		}
+	}
+
+	option = {
+		name = serbia.16.b # Threaten them with force
+		
+		ai_chance = { factor = 40 }
+
+		add_political_power = -20
+	}
+
+	option = {
+		name = serbia.16.c # Offer them an alliance
+
+		ai_chance = { factor = 40 }
+
+		trigger = { is_faction_leader = yes }
+
+
 	}
 }
