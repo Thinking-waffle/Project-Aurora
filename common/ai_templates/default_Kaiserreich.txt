@@ -42,7 +42,7 @@ garrison_default = {
 		}
 		
 		regiments = {
-			garrison = 6
+			garrison = 9
 
 
 		}
