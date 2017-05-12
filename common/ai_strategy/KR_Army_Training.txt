@@ -933,7 +933,7 @@ ai_army_building_150 = { #150 Units
 		ai_wants_divisions < 150
 		has_army_size = { size < 150 }
 		has_war = no
-		num_of_factories > 99
+		num_of_factories > 139
 		has_manpower > 50000
 		NOT = { original_tag = SWI }
 		NOT = { original_tag = TIB }
@@ -999,7 +999,7 @@ ai_army_building_150 = { #150 Units
 		OR = {
 			NOT = {has_army_size = { size < 150 } }
 			has_war = yes
-			NOT = { num_of_factories > 99 }
+			NOT = { num_of_factories > 139 }
 			has_manpower < 1000
 		}
 	}
@@ -1015,7 +1015,7 @@ ai_army_building_300 = { # Please Stop Building Units
 		NOT = {ai_wants_divisions < 300}
 		NOT = {has_army_size = { size < 300 }}
 		has_war = no
-		num_of_factories > 99
+		num_of_factories > 139
 		has_manpower > 50000
 		NOT = { original_tag = SWI }
 		NOT = { original_tag = TIB }
@@ -1080,7 +1080,7 @@ ai_army_building_300 = { # Please Stop Building Units
 	abort = { 
 		OR = {
 			has_army_size = { size < 300 }
-			NOT = {num_of_factories > 99}
+			NOT = {num_of_factories > 139}
 			has_manpower < 1000
 		}
 	}
@@ -1808,7 +1808,7 @@ ai_low_mon_army_building_150 = { #150 Units
 		ai_wants_divisions < 150
 		has_army_size = { size < 150 }
 		has_war = no
-		num_of_factories > 99
+		num_of_factories > 139
 		has_manpower > 50000
 		OR = {
 			original_tag = OTT
@@ -1828,7 +1828,7 @@ ai_low_mon_army_building_150 = { #150 Units
 		OR = {
 			NOT = {has_army_size = { size < 150 } }
 			has_war = yes
-			NOT = { num_of_factories > 99 }
+			NOT = { num_of_factories > 139 }
 			has_manpower < 1000
 		}
 	}
@@ -1849,7 +1849,7 @@ ai_low_mon_army_building_300 = { # Please Stop Building Units
 		NOT = {ai_wants_divisions < 300}
 		NOT = {has_army_size = { size < 300 }}
 		has_war = no
-		num_of_factories > 99
+		num_of_factories > 139
 		has_manpower > 50000
 		OR = {
 			original_tag = OTT
@@ -1868,7 +1868,7 @@ ai_low_mon_army_building_300 = { # Please Stop Building Units
 	abort = { 
 		OR = {
 			has_army_size = { size < 300 }
-			NOT = {num_of_factories > 99}
+			NOT = {num_of_factories > 139}
 			has_manpower < 1000
 		}
 	}
@@ -2479,7 +2479,7 @@ ai_med_mon_army_building_150 = { #150 Units
 		ai_wants_divisions < 150
 		has_army_size = { size < 150 }
 		has_war = no
-		num_of_factories > 99
+		num_of_factories > 139
 		has_manpower > 50000
 		OR = {
 			original_tag = AFG
@@ -2499,7 +2499,7 @@ ai_med_mon_army_building_150 = { #150 Units
 		OR = {
 			NOT = {has_army_size = { size < 150 } }
 			has_war = yes
-			NOT = { num_of_factories > 99 }
+			NOT = { num_of_factories > 139 }
 			has_manpower < 1000
 		}
 	}
@@ -2520,7 +2520,7 @@ ai_med_mon_army_building_300 = { # Please Stop Building Units
 		NOT = {ai_wants_divisions < 300}
 		NOT = {has_army_size = { size < 300 }}
 		has_war = no
-		num_of_factories > 99
+		num_of_factories > 139
 		has_manpower > 50000
 		OR = {
 			original_tag = AFG
@@ -2539,7 +2539,7 @@ ai_med_mon_army_building_300 = { # Please Stop Building Units
 	abort = { 
 		OR = {
 			has_army_size = { size < 300 }
-			NOT = {num_of_factories > 99}
+			NOT = {num_of_factories > 139}
 			has_manpower < 1000
 		}
 	}
@@ -3073,7 +3073,7 @@ ai_ext_mon_army_building_150 = { #150 Units
 		ai_wants_divisions < 150
 		has_army_size = { size < 150 }
 		has_war = no
-		num_of_factories > 99
+		num_of_factories > 139
 		has_manpower > 50000
 		OR = {
 			original_tag = SWI
@@ -3086,7 +3086,7 @@ ai_ext_mon_army_building_150 = { #150 Units
 		OR = {
 			NOT = {has_army_size = { size < 150 } }
 			has_war = yes
-			NOT = { num_of_factories > 99 }
+			NOT = { num_of_factories > 139 }
 			has_manpower < 1000
 		}
 	}
@@ -3107,7 +3107,7 @@ ai_ext_mon_army_building_300 = { # Please Stop Building Units
 		NOT = {ai_wants_divisions < 300}
 		NOT = {has_army_size = { size < 300 }}
 		has_war = no
-		num_of_factories > 99
+		num_of_factories > 139
 		has_manpower > 50000
 		OR = {
 			original_tag = SWI
@@ -3119,7 +3119,7 @@ ai_ext_mon_army_building_300 = { # Please Stop Building Units
 	abort = { 
 		OR = {
 			has_army_size = { size < 300 }
-			NOT = {num_of_factories > 99}
+			NOT = {num_of_factories > 139}
 			has_manpower < 1000
 		}
 	}
@@ -3741,7 +3741,7 @@ ai_low_mar_army_building_150 = { #150 Units
 		ai_wants_divisions < 150
 		has_army_size = { size < 150 }
 		has_war = no
-		num_of_factories > 99
+		num_of_factories > 139
 		has_manpower > 50000
 		OR = {
 			original_tag = POR
@@ -3764,7 +3764,7 @@ ai_low_mar_army_building_150 = { #150 Units
 		OR = {
 			NOT = {has_army_size = { size < 150 } }
 			has_war = yes
-			NOT = { num_of_factories > 99 }
+			NOT = { num_of_factories > 139 }
 			has_manpower < 1000
 		}
 	}
@@ -3785,7 +3785,7 @@ ai_low_mar_army_building_300 = { # Please Stop Building Units
 		NOT = {ai_wants_divisions < 300}
 		NOT = {has_army_size = { size < 300 }}
 		has_war = no
-		num_of_factories > 99
+		num_of_factories > 139
 		has_manpower > 50000
 		OR = {
 			original_tag = POR
@@ -3807,7 +3807,7 @@ ai_low_mar_army_building_300 = { # Please Stop Building Units
 	abort = { 
 		OR = {
 			has_army_size = { size < 300 }
-			NOT = {num_of_factories > 99}
+			NOT = {num_of_factories > 139}
 			has_manpower < 1000
 		}
 	}
@@ -4438,7 +4438,7 @@ ai_med_mar_army_building_150 = { #150 Units
 		ai_wants_divisions < 150
 		has_army_size = { size < 150 }
 		has_war = no
-		num_of_factories > 99
+		num_of_factories > 139
 		has_manpower > 50000
 		OR = {
 			original_tag = CAF
@@ -4459,7 +4459,7 @@ ai_med_mar_army_building_150 = { #150 Units
 		OR = {
 			NOT = {has_army_size = { size < 150 } }
 			has_war = yes
-			NOT = { num_of_factories > 99 }
+			NOT = { num_of_factories > 139 }
 			has_manpower < 1000
 		}
 	}
@@ -4480,7 +4480,7 @@ ai_med_mar_army_building_300 = { # Please Stop Building Units
 		NOT = {ai_wants_divisions < 300}
 		NOT = {has_army_size = { size < 300 }}
 		has_war = no
-		num_of_factories > 99
+		num_of_factories > 139
 		has_manpower > 50000
 		OR = {
 			original_tag = CAF
@@ -4500,7 +4500,7 @@ ai_med_mar_army_building_300 = { # Please Stop Building Units
 	abort = { 
 		OR = {
 			has_army_size = { size < 300 }
-			NOT = {num_of_factories > 99}
+			NOT = {num_of_factories > 139}
 			has_manpower < 1000
 		}
 	}
@@ -5069,7 +5069,7 @@ ai_med_cav_army_building_150 = { #150 Units
 		ai_wants_divisions < 150
 		has_army_size = { size < 150 }
 		has_war = no
-		num_of_factories > 99
+		num_of_factories > 139
 		has_manpower > 50000
 		OR = {
 			original_tag = MON
@@ -5085,7 +5085,7 @@ ai_med_cav_army_building_150 = { #150 Units
 		OR = {
 			NOT = {has_army_size = { size < 150 } }
 			has_war = yes
-			NOT = { num_of_factories > 99 }
+			NOT = { num_of_factories > 139 }
 			has_manpower < 1000
 		}
 	}
@@ -5106,7 +5106,7 @@ ai_med_cav_army_building_300 = { # Please Stop Building Units
 		NOT = {ai_wants_divisions < 300}
 		NOT = {has_army_size = { size < 300 }}
 		has_war = no
-		num_of_factories > 99
+		num_of_factories > 139
 		has_manpower > 50000
 		OR = {
 			original_tag = MON
@@ -5121,7 +5121,7 @@ ai_med_cav_army_building_300 = { # Please Stop Building Units
 	abort = { 
 		OR = {
 			has_army_size = { size < 300 }
-			NOT = {num_of_factories > 99}
+			NOT = {num_of_factories > 139}
 			has_manpower < 1000
 		}
 	}
