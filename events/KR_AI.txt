@@ -1349,7 +1349,7 @@ country_event = {
 	trigger = {
 		is_ai = yes #AI Only
 		has_idea = civilian_economy
-		has_political_power > 110
+		has_political_power > 105
 		has_war = no
 		threat > 0.05
 	}
@@ -1375,7 +1375,7 @@ country_event = {
 	trigger = {
 		is_ai = yes #AI Only
 		has_idea = low_economic_mobilisation
-		has_political_power > 110
+		has_political_power > 105
 		has_war = no
 		threat > 0.15
 	}
