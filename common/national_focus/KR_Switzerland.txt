@@ -1,0 +1,806 @@
+focus_tree = {
+	id = KR_Switzerland
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SWI
+		}
+	}
+	default = no
+	focus = {
+		id = SWI_freemasonry
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		x = 12
+		y = 0
+
+	}
+	focus = {
+		id = SWI_army_reorganization
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		x = 10
+		y = 0
+
+	}
+	focus = {
+		id = SWI_transport_of_goods
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		x = 14
+		y = 0
+
+	}
+	focus = {
+		id = SWI_combat_economic_crisis
+		icon = GFX_goal_economic_control
+		cost = 10.00
+		x = 6
+		y = 0
+
+	}
+	focus = {
+		id = SWI_revise_constitution
+		icon = GFX_goal_government_icon
+		cost = 10.00
+		x = 4
+		y = 0
+
+	}
+	focus = {
+		id = SWI_syndicalist_unions
+		icon = GFX_BRA_congress
+		cost = 10.00
+		x = 8
+		y = 0
+
+	}
+	focus = {
+		id = SWI_language_acts
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		x = 2
+		y = 0
+
+	}
+	focus = {
+		id = SWI_national_defense
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 20
+		y = 0
+
+	}
+	focus = {
+		id = SWI_luftwaffe
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 26
+		y = 0
+
+	}
+	focus = {
+		id = SWI_reverse_economic_downturn
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 34
+		y = 0
+
+	}
+	focus = {
+		id = SWI_romandy_crisis
+		icon = GFX_goal_ideology_syndicalist
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_language_acts
+			focus = SWI_revise_constitution
+			focus = SWI_combat_economic_crisis
+			focus = SWI_syndicalist_unions
+			focus = SWI_army_reorganization
+			focus = SWI_freemasonry
+			focus = SWI_transport_of_goods
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = SWI_austrian_assisstance
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_romandy_crisis
+		}
+		mutually_exclusive = {
+			focus = SWI_italian_assisstance
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = SWI_alpine_rhine
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_austrian_assisstance
+		}
+		mutually_exclusive = {
+			focus = SWI_swiss_guard
+		}
+		x = 1
+		y = 4
+
+	}
+	focus = {
+		id = SWI_italian_assisstance
+		icon = GFX_goal_flag_italianfed
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_romandy_crisis
+		}
+		mutually_exclusive = {
+			focus = SWI_german_aid
+			focus = SWI_austrian_assisstance
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = SWI_swiss_guard
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_italian_assisstance
+		}
+		mutually_exclusive = {
+			focus = SWI_alpine_rhine
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = SWI_hold_the_line
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_swiss_guard
+			focus = SWI_alpine_rhine
+		}
+		x = 2
+		y = 5
+
+	}
+	focus = {
+		id = SWI_economic_routes
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_hold_the_line
+		}
+		x = 1
+		y = 6
+
+	}
+	focus = {
+		id = SWI_international_aid
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_hold_the_line
+		}
+		x = 3
+		y = 6
+
+	}
+	focus = {
+		id = SWI_german_aid
+		icon = GFX_goal_flag_germany
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_romandy_crisis
+		}
+		mutually_exclusive = {
+			focus = SWI_bend_to_france
+			focus = SWI_italian_assisstance
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = SWI_joint_command
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_german_aid
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = SWI_retreat_redoubt
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_joint_command
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = SWI_beat_back_french
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_retreat_redoubt
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = SWI_german_military_tactics
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_german_aid
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = SWI_german_economic_assisstance
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_german_military_tactics
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = SWI_mitteleuropa
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_german_economic_assisstance
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = SWI_bend_to_france
+		icon = GFX_goal_flag_comfrance
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_romandy_crisis
+		}
+		mutually_exclusive = {
+			focus = SWI_enemies_on_all_sides
+			focus = SWI_german_aid
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = SWI_referendum_syndicalism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_bend_to_france
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = SWI_new_government
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_referendum_syndicalism
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = SWI_geneva_avenged
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_new_government
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = SWI_national_unions
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_new_government
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = SWI_enemies_on_all_sides
+		icon = GFX_goal_ideology_national_populist
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_romandy_crisis
+		}
+		mutually_exclusive = {
+			focus = SWI_bend_to_france
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = SWI_the_government_has_failed
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_enemies_on_all_sides
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = SWI_one_people
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_the_government_has_failed
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = SWI_defend_the_borders
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_the_government_has_failed
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = SWI_mandatory_service
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_defend_the_borders
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = SWI_strategic_services
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_national_defense
+		}
+		x = 17
+		y = 1
+
+	}
+	focus = {
+		id = SWI_fortress
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_national_defense
+		}
+		x = 20
+		y = 1
+
+	}
+	focus = {
+		id = SWI_guisan_plan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_fortress
+		}
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = SWI_guisan_speech
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_guisan_plan
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = SWI_bircher_plan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_fortress
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = SWI_gotthard
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_bircher_plan
+			focus = SWI_guisan_plan
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = SWI_maurice
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_gotthard
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = SWI_Sargans
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_maurice
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = SWI_man_borders
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_bircher_plan
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = SWI_ski_divisions
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_man_borders
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = SWI_mountineer_defense
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_ski_divisions
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = SWI_air_academy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_luftwaffe
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = SWI_mountain_airfields
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_air_academy
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = SWI_mountain_aa
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_mountain_airfields
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = SWI_new_fighters
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_luftwaffe
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = SWI_liscense_foregin_designs
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_new_fighters
+		}
+		x = 27
+		y = 2
+
+	}
+	focus = {
+		id = SWI_free_our_skies
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_liscense_foregin_designs
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = SWI_cross_the_border
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_free_our_skies
+			focus = SWI_mountain_aa
+		}
+		x = 26
+		y = 4
+
+	}
+	focus = {
+		id = SWI_coal_mines
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_reverse_economic_downturn
+		}
+		x = 30
+		y = 1
+
+	}
+	focus = {
+		id = SWI_cultivation_battle
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_reverse_economic_downturn
+		}
+		x = 32
+		y = 1
+
+	}
+	focus = {
+		id = SWI_economic_sufficiency
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_cultivation_battle
+		}
+		x = 32
+		y = 2
+
+	}
+	focus = {
+		id = SWI_national_bank
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_reverse_economic_downturn
+		}
+		x = 34
+		y = 1
+
+	}
+	focus = {
+		id = SWI_gold_reserves
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_national_bank
+		}
+		x = 34
+		y = 2
+
+	}
+	focus = {
+		id = SWI_promote_franc
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_reverse_economic_downturn
+		}
+		x = 36
+		y = 1
+
+	}
+	focus = {
+		id = SWI_sell_war_bonds
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_promote_franc
+		}
+		x = 36
+		y = 2
+
+	}
+	focus = {
+		id = SWI_swiss_miracle
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_sell_war_bonds
+		}
+		prerequisite = {
+			focus = SWI_gold_reserves
+		}
+		prerequisite = {
+			focus = SWI_economic_sufficiency
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = SWI_trans_alpine_tunnels
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_reverse_economic_downturn
+		}
+		x = 38
+		y = 1
+
+	}
+	focus = {
+		id = SWI_black_spot_of_europe
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_mandatory_service
+		}
+		prerequisite = {
+			focus = SWI_ban_all_foreigners
+		}
+		x = 14
+		y = 7
+
+	}
+	focus = {
+		id = SWI_ban_all_foreigners
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_one_people
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = SWI_abolish_the_verdingkinder
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_geneva_avenged
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = SWI_swiss_french_alliance
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_national_unions
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = SWI_bullet_or_bayonet
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_guisan_speech
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = SWI_resist_to_the_end
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_bullet_or_bayonet
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = SWI_formalize_volunteers
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_international_aid
+		}
+		x = 3
+		y = 7
+
+	}
+	focus = {
+		id = SWI_new_swiss_army
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_resist_to_the_end
+			focus = SWI_Sargans
+			focus = SWI_mountineer_defense
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = SWI_war_profiteering
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SWI_reverse_economic_downturn
+		}
+		x = 40
+		y = 1
+
+	}
+}
