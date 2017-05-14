@@ -4,7 +4,6 @@
 #This file will allow more specific control over the AI that cannot be achieved through other means
 
 add_namespace = ai.civilwar
-
 ########Civil War Intervention########
 #This only deals with countries more generally and, hopefully, dynamically. Specific countries already being used in the other relveant event files will not be effecting. For example germany has an event for civil war intervention in the Spain event file so it will not be effected here.
 ####Spanish Civil War####
@@ -1334,5 +1333,60 @@ country_event = {
 				}	
 			}
 		}
+	}
+}
+
+#### Economic Law Increases ####
+## Makes the AI increase to a better economy law if they're at peace and can afford it. It's almost always the best way to spend 100 pp. ##
+
+### Civilian -> Early ###
+country_event = {
+	id = ai.civilwar.015
+	title = sprc.101.t
+	desc = sprc.101.d
+	picture = GFX_report_event_SPR_civwar
+	
+	trigger = {
+		is_ai = yes #AI Only
+		has_idea = civilian_economy
+		has_political_power > 110
+		has_war = no
+		threat > 0.05
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = sprc.101.a
+		add_ideas = low_economic_mobilisation
+		add_political_power = -100
+	}
+}
+
+### Early -> Partial ###
+country_event = {
+	id = ai.civilwar.016
+	title = sprc.101.t
+	desc = sprc.101.d
+	picture = GFX_report_event_SPR_civwar
+	
+	trigger = {
+		is_ai = yes #AI Only
+		has_idea = low_economic_mobilisation
+		has_political_power > 110
+		has_war = no
+		threat > 0.15
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = sprc.101.a
+		add_ideas = partial_economic_mobilisation
+		add_political_power = -100
 	}
 }
