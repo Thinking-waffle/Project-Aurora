@@ -1305,7 +1305,12 @@ country_event = { #Poland under germany
 			elections_allowed = no
 		}
 		hidden_effect = {
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.60
+			}
 			load_oob = POL_puppet
+			set_cosmetic_tag = POL
 			clr_global_flag = POL_REPUBLIC
 			clr_global_flag = POL_NATIONALISTS
 			clr_global_flag = POL_SYNDIE
@@ -2559,7 +2564,7 @@ country_event = { #Honour the deal
 		if = {
 			limit = {
 				AND = {
-					is_in_faction = yes is_faction_leader = no
+					is_in_faction = yes NOT = { is_faction_leader = yes }
 				}
 			}
 			every_other_country = {
@@ -6298,7 +6303,7 @@ country_event = { #Brian III arrives !
 		create_country_leader = {
 			name = "Brian III"
 			desc = "POLITICS_Fryderyk_Krystian_Saski_DESC"
-			picture = "Friedrich_Christian_von_Wettin.tga"
+			picture = "Portrait_Ireland_Prince_Joachim.tga"
 			expire = "1965.1.1"
 			ideology = authoritarian_democrat_subtype
 			traits = {}
@@ -11045,6 +11050,7 @@ country_event = { #The Annexation of Egypt
 				is_controlled_by = ROOT
 				NOT = {
 					is_core_of = ROOT
+					state = 753
 				}
 
 			}
@@ -11106,6 +11112,7 @@ country_event = { #The Annexation of Egypt
 				is_controlled_by = ROOT
 				NOT = {
 					is_core_of = ROOT
+					state = 753
 				}
 
 			}
