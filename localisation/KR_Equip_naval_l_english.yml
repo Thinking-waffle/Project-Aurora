@@ -634,6 +634,16 @@ HOL_battleship_2:0 "Koningin Regentes Class"
 HOL_battleship_3:0 "Philip van Almond Class"
 HOL_battleship_4:0 "Koningin Wilhelmina Class"
 
+### Hidden tech ships TEST TEST TESTTTT ###
+pantserschip_eq:0 "Pantserschip"
+pantserschip_desc:0 "This is for testing purposes."
+kanoneerboot_eq:0 "Kanoneerboot"
+kanoneerboot_desc:0 "This is for testing purposes."
+HOL_kanoneerboot_eq:0 "Flores Class"
+HOL_kanoneerboot_desc:0 "This is for testing purposes as well."
+HOL_pantserschip_eq:0 "Koningin Wilhelmina Class"
+HOL_pantserschip_eq_desc:0 "This is for testing purposes as well."
+
 ### Super Heavy Battleships ###
 HOL_SH_battleship_1:0 "Willem van Oranje Class"
 HOL_SH_battleship_2:0 "Eendracht Class"

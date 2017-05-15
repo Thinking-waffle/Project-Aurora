@@ -1,115 +1,286 @@
-﻿###########################
-# Netherlands Events
-###########################
-# By MonarchistKaiser
-###########################
+﻿###################################
+# Netherlands - By MonarchistKaiser, Denizz & Strategia
+###################################
 
 add_namespace = hol
+add_namespace = holst  #Starting Events of 1936
+add_namespace = holel  #Elections
+add_namespace = holfocus  #Focus events
+add_namespace = holdei #Dutch East Indies
+add_namespace = holnavy #naval events
 
-country_event = { #Zuiderzee Works
-	id = hol.1
-	title = hol.1.t
-	desc = hol.1.d
+###################################
+# Starting Events
+###################################
 
-	fire_only_once = yes
-
-	trigger = {
-	tag = HOL
-	date > 1936.01.05
-	}
-
-	option = {
-		name = hol.1.a
-		ai_chance = { factor = 70 }
-		add_political_power = -50
-		hidden_effect = {
-		set_country_flag = hol_zuiderzee
-		}
-	}
-	option = {
-		name = hol.1.b
-		ai_chance = { factor = 30 }
-	}
-}
-
-country_event = { #Reclaimed Land
-	id = hol.2
-	title = hol.2.t
-	desc = hol.2.d
+country_event = { #Netherlands in 1936
+	id = holst.1
+	title = holst.1.t
+	desc = holst.1.d
 
 	fire_only_once = yes
 
 	trigger = {
 	tag = HOL
-	date > 1941.07.01
-	has_country_flag = hol_zuiderzee
+    date > 1936.01.05
 	}
 
 	option = {
-		name = hol.2.a
-		add_political_power = 100
-		add_equipment_to_stockpile = { type = convoy_1 amount = 50 producer = HOL }
-		hidden_effect = {
-		clr_country_flag = hol_zuiderzee
-		}
-	}
-}
-
-country_event = { #Berlin stock crisis
-	id = hol.3
-	title = hol.3.t
-	desc = hol.3.d
-
-	fire_only_once = yes
-
-	trigger = {
-	tag = HOL
-	date > 1936.02.05
-	}
-
-	option = {
-		name = hol.3.a
-		add_political_power = -300
-	}
-}
-
-country_event = { #Worsening Living Standard
-	id = hol.4
-	title = hol.4.t
-	desc = hol.4.d
-
-	fire_only_once = yes
-
-	trigger = {
-	tag = HOL
-	date > 1936.05.04
-	}
-
-	option = {
-		name = hol.4.a
-		ai_chance = { factor = 45 }
-		add_political_power = -100
-		add_popularity = { ideology = social_democrat popularity = 0.25 }
+		name = holst.1.a 
+		ai_chance = { factor = 100 }
 		hidden_effect = {
 		set_country_flag = hol_democrat
 		}
 	}
+}
+
+
+country_event = { #Berlin stock crisis
+	id = holst.2
+	title = holst.2.t
+	desc = holst.2.d
+
+	fire_only_once = yes
+
+	trigger = {
+	tag = HOL
+    date > 1936.02.05
+	}
 
 	option = {
-		name = hol.4.b
-		ai_chance = { factor = 55 }
-			add_political_power = -40
-		hidden_effect = {
-		set_country_flag = hol_revolt
+		name = holst.2.a 
+        add_political_power = -100
 		add_ideas = HOL_crisis
+	}
+}
+
+country_event = { #Jordaan Riots
+	id = holst.3
+	title = holst.3.t
+	desc = holst.3.d
+	picture = HOL_jordaanoproer
+
+	fire_only_once = yes
+
+	trigger = {
+	tag = HOL
+    date > 1936.09.15
+	}
+
+	option = {
+		name = holst.3.a 
+        add_political_power = -50
+		hidden_effect = {		
+		set_country_flag = hol_jordaanriots
 		}
 	}
 }
 
+country_event = { #Lijst Links: The VDB-SDAP Electoral Pact
+	id = holst.4
+	title = holst.4.t
+	desc = holst.4.d
+	picture = HOL_lijstlinks
+	
+	fire_only_once = yes
+
+	trigger = {
+	tag = HOL
+    date > 1936.10.18
+	}
+
+	option = { #Together against the radicals
+		name = holst.4.a 
+        add_political_power = -25
+		set_party_name =  {ideology = social_democrat name = HOL_election_social_democrat_party long_name = HOL_election_social_democrat_party_long}
+		set_party_name =  {ideology = social_liberal name = HOL_election_social_liberal_party long_name = HOL_election_social_liberal_party_long}
+	}
+}
+
+country_event = { #Worsening Living Standard
+	id = holst.5
+	title = holst.5.t
+	desc = holst.5.d
+
+	fire_only_once = yes
+
+	trigger = {
+	tag = HOL
+    date > 1936.05.04
+	}
+
+	option = {
+		name = holst.5.a 
+		ai_chance = { factor = 100 }
+        add_political_power = -50
+		hidden_effect = {
+		set_country_flag = hol_democrat
+		}
+	}
+}
+
+country_event = { #The pillars begin to crumble
+	id = holst.6
+	title = holst.6.t
+	desc = holst.6.d
+	picture = HOL_ontzuiling
+	
+	fire_only_once = yes
+
+	trigger = {
+	tag = HOL
+    date > 1936.07.22
+	}
+
+	option = { #Dear god, no!
+		name = holst.6.a 
+        add_political_power = -25
+	}
+}
+
+country_event = { #Formation of the Christelijke Nationale Alliantie
+	id = holst.7
+	title = holst.7.t
+	desc = holst.7.d
+	
+	fire_only_once = yes
+
+	trigger = {
+	tag = HOL
+    date > 1936.08.12
+	}
+
+	option = { #United in faith
+		name = holst.7.a 
+        add_political_power = -10
+		set_party_name =  {ideology = authoritarian_democrat name = HOL_election_authoritarian_democrat_party long_name = HOL_election_authoritarian_democrat_long}
+		set_party_name =  {ideology = paternal_autocrat name = HOL_election_paternal_autocrat_party long_name = HOL_election_paternal_autocrat_party_long}
+	}
+}
+
+country_event = { #The Liberal Crisis
+	id = holst.8
+	title = holst.8.t
+	desc = holst.8.d
+	picture = HOL_liberal
+	
+	fire_only_once = yes
+
+	trigger = {
+	tag = HOL
+    date > 1936.10.02
+	}
+
+	option = { #Troubling times, but the torch of liberalism is not yet extinguished
+		name = holst.8.a 
+        add_political_power = -10
+	}
+}
+
+country_event = { #Rise of the Radical Left
+	id = holst.9
+	title = holst.9.t
+	desc = holst.9.d
+	picture = HOL_de_roden_roepen
+	
+	fire_only_once = yes
+
+	trigger = {
+	tag = HOL
+    date > 1936.08.03
+	}
+
+	option = { #More Radical Leftists? Good god!
+		name = holst.9.a 
+        add_political_power = -25
+	}
+}
+
+country_event = { #Landwacht forms
+	id = holst.10
+	title = holst.10.t
+	desc = holst.10.d
+	picture = HOL_landwacht
+
+	fire_only_once = yes
+
+	trigger = {
+	tag = HOL
+	has_country_flag = hol_jordaanriots
+	mean_time_to_happen = {days = 7}
+	}
+	option = {
+		name = holst.10.a 
+        add_political_power = -10
+		}
+	
+}
+
+country_event = { #The Death of Van Gybland Oosterhoff
+	id = holst.11
+	title = holst.11.t
+	desc = holst.11.d
+	picture = HOL_vnh_poster
+
+	fire_only_once = yes
+
+	trigger = {
+	tag = HOL
+    date > 1937.01.05
+}
+	option = {
+		name = holst.11.a 
+        add_political_power = -5
+		}
+}
+
+country_event = { #Social Unrest in the Netherlands
+	id = holst.12
+	title = holst.12.t
+	desc = holst.12.d
+
+	fire_only_once = yes
+
+	trigger = {
+	tag = HOL
+    date > 1937.03.15
+}
+	option = {
+		name = holst.12.a 
+        add_political_power = -5
+		}
+}
+
+country_event = { #Zwolle Massacre
+	id = holst.13
+	title = holst.13.t
+	desc = holst.13.d
+	picture = HOL_zwolle_riots
+
+	fire_only_once = yes
+
+	trigger = {
+	tag = HOL
+    date > 1937.04.21
+}
+	option = {
+		name = holst.13.a 
+        add_political_power = -5
+		}
+	option = {
+		name = holst.13.b
+        add_political_power = -5
+		}
+}
+
+###################################
+# Dutch Elections 1937
+###################################
+
 country_event = { #Dutch Elections 1937
-	id = hol.5
-	title = hol.5.t
-	desc = hol.5.d
+	id = holel.1
+	title = holel.1.t
+	desc = holel.1.d
 
 	is_triggered_only = yes
 
@@ -121,54 +292,89 @@ country_event = { #Dutch Elections 1937
 	}
 
 	option = {
-		name = hol.5.a
-		ai_chance = { factor = 40 }
-				add_political_power = -100
+		name = holel.1.a #Radical Left
+		ai_chance = { factor = 5 }
 		set_politics = { ruling_party = social_democrat elections_allowed = no }
 		add_popularity = { ideology = social_democrat popularity = 0.25 }
 		hidden_effect = {
-		set_country_flag = hol_labor
-		clr_country_flag = hol_democrat
+		set_country_flag = hol_radicalleft
+        clr_country_flag = hol_democrat
 		}
-		remove_ideas_with_trait = head_of_government
-		add_ideas = HOL_Johan_Albarda_hog_sde
-		remove_ideas_with_trait = foreign_minister
-		add_ideas = HOL_Servatius_Baart_for_sde
-		remove_ideas_with_trait = economy_minister
-		add_ideas = HOL_Jacob_van_Gelderen_eco_sde
-		remove_ideas_with_trait = security_minister
-		add_ideas = HOL_Franc_van_der_Goes_sec_sde
 	}
-	option = {
-		name = hol.5.b
-		ai_chance = { factor = 30 }
-				add_political_power = -60
-		set_politics = { ruling_party = social_democrat elections_allowed = no }
-		add_popularity = { ideology = social_democrat popularity = 0.1 }
+    option = {
+		name = holel.1.b #Moderate Left
+		ai_chance = { factor = 40 }
+		set_politics = { ruling_party = social_democrat elections_allowed = no }			
+		add_popularity = { ideology = social_democrat popularity = 0.1 }		
 		hidden_effect = {
-		set_country_flag = hol_labormin
+		set_country_flag = hol_modleft
 		clr_country_flag = hol_democrat
-		}
-		remove_ideas_with_trait = head_of_government
-		add_ideas = HOL_Johan_Albarda_hog_sde
-		remove_ideas_with_trait = foreign_minister
-		add_ideas = HOL_Servatius_Baart_for_sde
-		remove_ideas_with_trait = economy_minister
-		add_ideas = HOL_Jacob_van_Gelderen_eco_sde
-		remove_ideas_with_trait = security_minister
-		add_ideas = HOL_Franc_van_der_Goes_sec_sde
+		}		
 	}
 	option = {
-		name = hol.5.c
-		ai_chance = { factor = 30 }
-				add_political_power = -200
-		set_politics = { ruling_party = social_conservative elections_allowed = no }
+		name = holel.1.c #Moderate Right
+		ai_chance = { factor = 50 }
+		set_politics = { ruling_party = market_liberal elections_allowed = no }			
 		add_popularity = { ideology = social_conservative popularity = 0.05 }
-		add_popularity = { ideology = market_liberal popularity = 0.05 }
-		add_popularity = { ideology = paternal_autocrat popularity = 0.05 }
-		hidden_effect = {
-		set_country_flag = hol_right
+		add_popularity = { ideology = market_liberal popularity = 0.05 }		
+		add_popularity = { ideology = paternal_autocrat popularity = 0.05 }	
+		hidden_effect = {		
+		set_country_flag = hol_modright
 		clr_country_flag = hol_democrat
+		}		
+    }
+		option = {
+		name = holel.1.e #Radical Right
+		ai_chance = { factor = 5 }
+		set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }			
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
+		add_popularity = { ideology = paternal_autocrat popularity = 0.05 }		
+		add_popularity = { ideology = national_populist popularity = 0.05 }	
+		hidden_effect = {		
+		set_country_flag = hol_radicalright
+		clr_country_flag = hol_democrat
+		}		
+    }
+}
+
+country_event = { #Moderate Right Cabinet
+	id = holel.2
+	title = holel.2.t
+	desc = holel.2.d
+
+	fire_only_once = yes
+
+	trigger = {
+	tag = HOL
+    date = 1937.08.25
+	has_country_flag = hol_modright
+	}
+option = {
+		name = holel.2.a #Liberal Course
+		ai_chance = { factor = 30 }
+		set_politics = { ruling_party = market_liberal elections_allowed = no }		
+		add_popularity = { ideology = market_liberal popularity = 0.25 }
+		hidden_effect = {
+		set_country_flag = hol_liberal
+        clr_country_flag = hol_radicalright
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = HOL_Pieter_Gerbrandy_hog_mli
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = HOL_Jacobus_Patijn_for_mli
+		remove_ideas_with_trait = economy_minister
+		add_ideas = HOL_Tietse_Pieter_Sevensma_eco_mli
+		remove_ideas_with_trait = security_minister
+		add_ideas = HOL_Pieter_Gerbrandy_sec_mli	
+	}
+    option = {
+		name = holel.2.b #CNA Course
+		ai_chance = { factor = 50 }
+		set_politics = { ruling_party = social_conservative elections_allowed = no }			
+		add_popularity = { ideology = social_conservative popularity = 0.1 }		
+		hidden_effect = {
+		set_country_flag = hol_cnacourse
+		clr_country_flag = hol_radicalright
 		}
 		remove_ideas_with_trait = head_of_government
 		add_ideas = HOL_Andries_Dirk_de_Graaf_hog_sco
@@ -176,171 +382,152 @@ country_event = { #Dutch Elections 1937
 		add_ideas = HOL_Frans_B_van_Blokland_for_sco
 		remove_ideas_with_trait = economy_minister
 		add_ideas = HOL_Adriaan_Dijxhoorn_eco_sco
-	}
-}
-
-country_event = { #Labor Strikes
-	id = hol.6
-	title = hol.6.t
-	desc = hol.6.d
-
-	trigger = {
-	tag = HOL
-	date > 1936.05.20
-	date < 1937.07.10
-	has_country_flag = hol_revolt
-	}
-	mean_time_to_happen = { days = 120 }
-
-	option = {
-		name = hol.6.a
-		ai_chance = { factor = 90 }
-		add_political_power = -50
+		remove_ideas_with_trait = security_minister
+		add_ideas = HOL_Johan_W_van_Oorschot_sec_sco				
 	}
 	option = {
-		name = hol.6.b
+		name = holel.2.c #VNH Course
 		ai_chance = { factor = 10 }
-		add_political_power = -10
-				clr_country_flag = hol_revolt
-				set_country_flag = hol_right
-	}
-}
-
-country_event = { #Zwolle Massacre
-	id = hol.7
-	title = hol.7.t
-	desc = hol.7.d
-
-	fire_only_once = yes
-
-	trigger = {
-	tag = HOL
-	date > 1937.07.20
-	has_country_flag = hol_revolt
-	}
-
-	option = {
-		name = hol.7.a
-		ai_chance = { factor = 40 }
-		add_political_power = -300
-	}
-	option = {
-		name = hol.7.b
-		ai_chance = { factor = 60 }
-		add_political_power = -60
-		set_politics = { ruling_party = social_democrat elections_allowed = no }
-		add_popularity = { ideology = social_democrat popularity = 0.25 }
-		hidden_effect {
-		clr_country_flag = hol_revolt
-		set_country_flag = hol_labor
-		remove_ideas = HOL_crisis
+		set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }			
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
+		hidden_effect = {		
+		set_country_flag = hol_vnhcourse
+		clr_country_flag = hol_radicalright
 		}
-	}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = HOL_Graaf_de_Marchant_et_d_Ansembourg_hog_ade
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = HOL_Jacobus_Patijn_for_ade
+		remove_ideas_with_trait = economy_minister
+		add_ideas = HOL_Gerrit_van_Burink_eco_ade
+		remove_ideas_with_trait = security_minister
+		add_ideas = HOL_Corneliis_van_Geelkerken_sec_ade		
+    } 
 }
 
-country_event = { #Labour Plan
-	id = hol.8
-	title = hol.8.t
-	desc = hol.8.d
+country_event = { #Far Right Cabinet
+	id = holel.3
+	title = holel.3.t
+	desc = holel.3.d
 
 	fire_only_once = yes
 
 	trigger = {
 	tag = HOL
-	date > 1936.01.01
-	has_country_flag = hol_labor
+    date = 1937.08.25
+	has_country_flag = hol_radicalright
 	}
-
-		mean_time_to_happen = { days = 27 }
-
-	option = {
-		name = hol.8.a
-		add_political_power = 100
-	}
-}
-
-country_event = { #France aid Syndie
-	id = hol.9
-	title = hol.9.t
-	desc = hol.9.d
-
-	fire_only_once = yes
-
-	trigger = {
-	tag = FRA
-	date > 1937.01.20
-	HOL = { has_country_flag = hol_revolt }
-	}
-
-		mean_time_to_happen = { days = 10 }
-
-	option = {
-		name = hol.9.a
-		ai_chance = { factor = 80 }
-		add_manpower = -10000
-		ENG = { country_event = { id = hol.10 } }
-	}
-	option = {
-		name = hol.9.b
-		ai_chance = { factor = 20 }
-		add_political_power = -40
-	}
-}
-
-country_event = { #British-French joint
-	id = hol.10
-	title = hol.10.t
-	desc = hol.10.d
-
-	is_triggered_only = yes
-
-	option = {
-		name = hol.10.a
-		ai_chance = { factor = 100 }
-		add_manpower = -10000
-		hidden_effect = { set_global_flag = hol_revolution }
-	}
-	option = {
-		name = hol.10.b
-		ai_chance = { factor = 0 }
-		add_political_power = -40
-	}
-}
-
-country_event = { #Syndicalist Revolution!
-	id = hol.11
-	title = hol.11.t
-	desc = hol.11.d
-
-	fire_only_once = yes
-
-	trigger = {
-	tag = HOL
-	date > 1937.01.20
-	has_global_flag = hol_revolution
-	has_political_power < -200
-		NOT = { has_government = radical_socialist has_government = syndicalist has_government = totalist }
-	}
-
-		mean_time_to_happen = { days = 5 }
-
-	option = {
-		name = hol.11.a
-		ai_chance = { factor = 90
-				modifier = {
-				factor = 0.55
-				has_political_power < -500
-			}
-				}
-		set_politics = { ruling_party = totalist elections_allowed = no }
-		add_popularity = { ideology = totalist popularity = 0.3 }
-				add_political_power = 100
+option = {
+		name = holel.3.a #VNH Seizes election
+		ai_chance = { factor = 5 }
+		set_politics = { ruling_party = national_populist elections_allowed = no }		
+		add_popularity = { ideology = national_populist popularity = 0.25 }
 		hidden_effect = {
-		clr_country_flag = hol_revolution
-		clr_country_flag = hol_revolt
-		remove_ideas = HOL_crisis
-		add_ideas = HOL_syndie
-		add_named_threat = { threat = 5 name = hol.11.t }
+		set_country_flag = hol_vnhcoup
+        clr_country_flag = hol_radicalright
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = HOL_Anton_Mussert_hog_npo
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = HOL_Meinout_Rost_van_Tonningen
+		remove_ideas_with_trait = economy_minister
+		add_ideas = HOL_Gerrit_van_Burink_eco_npo
+		remove_ideas_with_trait = security_minister
+		add_ideas = HOL_Corneliis_van_Geelkerken_sec_npo	
+	}
+    option = {
+		name = holel.3.b #CNA Coalition
+		ai_chance = { factor = 70 }
+		set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }			
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.1 }		
+		hidden_effect = {
+		set_country_flag = hol_cnacoalition
+		clr_country_flag = hol_radicalright
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = HOL_Graaf_de_Marchant_et_d_Ansembourg_hog_ade
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = HOL_Jacobus_Patijn_for_ade
+		remove_ideas_with_trait = economy_minister
+		add_ideas = HOL_Gerrit_van_Burink_eco_ade
+		remove_ideas_with_trait = security_minister
+		add_ideas = HOL_Corneliis_van_Geelkerken_sec_ade				
+	}
+	option = {
+		name = holel.3.c #VNH Lone rule
+		ai_chance = { factor = 25 }
+		set_politics = { ruling_party = paternal_autocrat elections_allowed = no }			
+		add_popularity = { ideology = paternal_autocrat popularity = 0.05 }
+		hidden_effect = {		
+		set_country_flag = hol_vnhrule
+		clr_country_flag = hol_radicalright
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = HOL_Anton_Mussert_hog_npo
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = HOL_Meinout_Rost_van_Tonningen_for_npo
+		remove_ideas_with_trait = economy_minister
+		add_ideas = HOL_Gerrit_van_Burink_eco_npo
+		remove_ideas_with_trait = security_minister
+		add_ideas = HOL_Corneliis_van_Geelkerken_sec_npo			
+    } 
+}
+country_event = { #Far Left Cabinet
+	id = holel.4
+	title = holel.4.t
+	desc = holel.4.d
+
+	fire_only_once = yes
+
+	trigger = {
+	tag = HOL
+    date = 1937.08.25
+	has_country_flag = hol_radicalleft
+	}
+option = {
+		name = holel.4.a #RSAP takes over
+		ai_chance = { factor = 5 }
+		set_politics = { ruling_party = radical_socialist elections_allowed = no }		
+		add_popularity = { ideology = radical_socialist popularity = 0.25 }
+		hidden_effect = {
+		set_country_flag = hol_rsap
+        clr_country_flag = hol_radicalleft
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = HOL_Johan_Albarda_hog_sde
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = HOL_Servatius_Baart_for_sde
+		remove_ideas_with_trait = economy_minister
+		add_ideas = HOL_Jacob_van_Gelderen_eco_sde
+		remove_ideas_with_trait = security_minister
+		add_ideas = HOL_Franc_van_der_Goes_sec_sde		
+	}
+    option = {
+		name = holel.4.b #Go Moderate: SDAP
+		ai_chance = { factor = 70 }
+		set_politics = { ruling_party = social_democrat elections_allowed = no }			
+		add_popularity = { ideology = social_democrat popularity = 0.25 }		
+		hidden_effect = {
+		set_country_flag = hol_sdap
+		clr_country_flag = hol_radicalleft
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = HOL_Johan_Albarda_hog_sde
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = HOL_Servatius_Baart_for_sde
+		remove_ideas_with_trait = economy_minister
+		add_ideas = HOL_Jacob_van_Gelderen_eco_sde
+		remove_ideas_with_trait = security_minister
+		add_ideas = HOL_Franc_van_der_Goes_sec_sde					
+	}
+	option = {
+		name = holel.4.c #Go Revolutionary
+		ai_chance = { factor = 25 }
+		set_politics = { ruling_party = syndicalist elections_allowed = no }			
+		add_popularity = { ideology = syndicalist popularity = 0.25 }
+		hidden_effect = {		
+		set_country_flag = hol_syndie
+		clr_country_flag = hol_radicalleft
 		}
 		remove_ideas_with_trait = head_of_government
 		add_ideas = HOL_David_Wijnkoop_hog_tot
@@ -349,303 +536,1260 @@ country_event = { #Syndicalist Revolution!
 		remove_ideas_with_trait = economy_minister
 		add_ideas = HOL_Peiter_Bergsma_eco_tot
 		remove_ideas_with_trait = security_minister
-		add_ideas = HOL_Hendrickus_Sneevliet_sec_tot
-		every_country = {
-				limit = { NOT = { OR = { tag = HOL has_government = radical_socialist has_government = syndicalist has_government = totalist }}}
-				news_event = {id = hol.13 }
-		}
-		every_country = {
-				limit = { NOT = { OR = { tag = HOL }} OR = { has_government = radical_socialist has_government = syndicalist has_government = totalist }}
-				news_event = {id = hol.14 }
-		}
-		HOL = { country_event = { days = 1 id = hol.15 } }
+		add_ideas = HOL_Ina_Willekes_MacDonald_sec_tot					
+    } 
+}
+country_event = { #Moderate Left Cabinet
+	id = holel.5
+	title = holel.5.t
+	desc = holel.5.d
+
+	fire_only_once = yes
+
+	trigger = {
+	tag = HOL
+    date = 1937.08.25
+	has_country_flag = hol_modleft
 	}
+    option = { name = holel.5.a #SDAP Majority
+	country_event = { id = holsdap.1 days = 3 }
+    	hidden_effect = {		
+		set_country_flag = hol_sdapmajority
+		clr_country_flag = hol_modleft
+		}
+	}
+	option = { name = holel.5.b #VDB Majority
+	country_event = { id = holvdb.1 days = 3 }
+	    hidden_effect = {		
+		set_country_flag = hol_vdbmajority
+		clr_country_flag = hol_modleft
+		}
+    }
+	
+}	
+
+###################################
+# SDAP Majority
+###################################
+country_event = { #SDAP Majority
+	id = holsdap.1
+	title = holsdap.1.t
+	desc = holsdap.1.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
 	option = {
-		name = hol.11.b
-		ai_chance = { factor = 10
-				modifier = {
-				factor = 5
-				has_political_power < -500
-			}
-				}
-		add_political_power = -100
+		name = holsdap.1.a #SDAP Majority
+		ai_chance = { factor = 100 }
+		set_politics = { ruling_party = social_democrat elections_allowed = no }			
+		add_popularity = { ideology = social_democrat popularity = 0.25 }		
 		hidden_effect = {
-		clr_global_flag = hol_revolution
-		clr_country_flag = hol_revolt
-		remove_ideas = HOL_crisis
+		set_country_flag = hol_sdapmajority
+		clr_country_flag = hol_modleft
+		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = HOL_Johan_Albarda_hog_sde
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = HOL_Servatius_Baart_for_sde
+		remove_ideas_with_trait = economy_minister
+		add_ideas = HOL_Jacob_van_Gelderen_eco_sde
+		remove_ideas_with_trait = security_minister
+		add_ideas = HOL_Franc_van_der_Goes_sec_sde					
+	}
+}	
+
+country_event = { #Future of the monarchy
+	id = holsdap.2
+	title = holsdap.2.t
+	desc = holsdap.2.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = holsdap.2.a #Remain a kingdom
+		add_political_power = 100		
+    }
+	option = {
+		name = holsdap.2.a #Become a republic!
+		add_political_power = 100		
 		}
 	}
-}
 
-news_event = { #Syndicalist Revolution! (No-Syndie Flavor)
-	id = hol.13
-	title = hol.13.t
-	desc = hol.13.d
-	picture = SOV_georgia_alliance.dds
+###################################
+# VDB Majority
+###################################
+country_event = { #VDB Majority
+	id = holvdb.1
+	title = holvdb.1.t
+	desc = holvdb.1.d
 
-	is_triggered_only = yes
-
-	option = {
-		name = hol.13.a
-	}
-}
-
-news_event = { #Syndicalist Revolution! (Syndie Flavor)
-	id = hol.14
-	title = hol.14.t
-	desc = hol.14.d
-	picture = SOV_georgia_alliance.dds
+	fire_only_once = yes
 
 	is_triggered_only = yes
-
 	option = {
-		name = hol.14.a
-	}
-}
-
-country_event = { #Fate of the Royal Family
-	id = hol.15
-	title = hol.15.t
-	desc = hol.15.d
-
-	is_triggered_only = yes
-
-	option = {
-		name = hol.15.a
+		name = holvdb.1.a #VDB Majority
 		ai_chance = { factor = 100 }
-		add_political_power = -60
-		release = INS
-		FRA = { add_to_faction = HOL }
-		hidden_effect = {
-		if = { limit = { NOT = { OR = { has_war_with = CAF is_in_faction_with = CAF  } } }
-		CAF = { country_event { days = 1 id = hol.16 } }
+		set_politics = { ruling_party = social_liberal elections_allowed = no }			
+		add_popularity = { ideology = social_liberal popularity = 0.25 }
+		hidden_effect = {		
+		set_country_flag = hol_vdbmajority
+		clr_country_flag = hol_modleft
 		}
+		remove_ideas_with_trait = head_of_government
+		add_ideas = HOL_Pieter_Gerbrandy_hog_mli
+		remove_ideas_with_trait = foreign_minister
+		add_ideas = HOL_Dirk_U_Stikker_for_sli
+		remove_ideas_with_trait = economy_minister
+		add_ideas = HOL_Kees_Staf_eco_sli
+		remove_ideas_with_trait = security_minister
+		add_ideas = HOL_Ina_Willekes_MacDonald_sec_tot					
 		}
 	}
+
+###################################
+# Dutch East Indies
+###################################
+
+country_event = { #Economic policy of the Dutch East Indies
+	id = holdei.1
+	title = holdei.1.t
+	desc = holdei.1.d
+	
+	is_triggered_only = yes
+	
 	option = {
-		name = hol.15.b
-		ai_chance = { factor = 0 }
-				add_political_power = -20
-		FRA = { add_to_faction = HOL }
-		hidden_effect = {
-		if = { limit = { NOT = { OR = { has_war_with = CAF is_in_faction_with = CAF } } }
-		CAF = { country_event { days = 1 id = hol.16 } }
+		name = holdei.1.a #We have tried to build a beneficial relationship with the natives, yet they responded with a revolt. Begin preparations to exploit the Indies for our gain!
+		add_political_power = -50
+			hidden_effect = { set_country_flag = HOL_ind_harsh }
+	}
+		option = {
+		name = holdei.1.b #For our colony to remain loyal, we must take a cautious approach. Begin improving the lives of the natives, and begin preparations to allow them to fully participate in colonial affairs.
+		add_political_power = +50
+			hidden_effect = { set_country_flag = HOL_ind_soft }
 		}
-		if = { limit = { NOT = { OR = { has_war_with = GER is_in_faction_with = GER } } }
-		GER = { country_event = { days = 1 id = hol.17 } }
-		}
-		if = { limit = { NOT = { OR = { has_war_with = AST is_in_faction_with = AST } } }
-		AST = { country_event = { days = 1 id = hol.18 } }
-		}
-		}
 	}
-}
-country_event = { #Carribean reaction
-	id = hol.16
-	title = hol.16.t
-	desc = hol.16.d
-
-	is_triggered_only = yes
-
-
-	option = {
-		name = hol.16.a
-		ai_chance = { factor = 100 }
-		add_state_core = 695
-		add_state_core = 309
-		HOL = { country_event = { id = hol.19 } }
-	}
-	option = {
-		name = hol.16.b
-		ai_chance = { factor = 0 }
-		add_political_power = -100
-	}
-}
-
-country_event = { #German reaction
-	id = hol.17
-	title = hol.17.t
-	desc = hol.17.d
-
-	is_triggered_only = yes
-
-
-	option = {
-		name = hol.17.a
-		ai_chance = { factor = 100 }
-		GER = { set_state_owner = 669 }
-		GER = { set_state_owner = 334 }
-		GER = { set_state_controller = 669 }
-		GER = { set_state_controller = 334 }
-		HOL = { country_event = { id = hol.20 } }
-	}
-	option = {
-		name = hol.17.b
-		ai_chance = { factor = 0 }
-		add_political_power = -100
-	}
-}
-
-country_event = { #Australasian reaction
-	id = hol.18
-	title = hol.18.t
-	desc = hol.18.d
-
-	is_triggered_only = yes
-
-
-	option = {
-		name = hol.18.a
-		ai_chance = { factor = 100 }
-		add_state_claim = 667
-		add_state_claim = 738
-		HOL = { country_event = { id = hol.21 } }
-	}
-	option = {
-		name = hol.18.b
-		ai_chance = { factor = 0 }
-		add_political_power = -100
-	}
-}
-
-country_event = { #HOL reaction to CAF
-	id = hol.19
-	title = hol.19.t
-	desc = hol.19.d
-
-	is_triggered_only = yes
-
-
-	option = {
-		name = hol.19.a
-		ai_chance = { factor = 100 }
-		CAF = { set_state_owner = 695 }
-		CAF = { set_state_owner = 309 }
-		CAF = { set_state_controller = 695 }
-		CAF = { set_state_controller = 309 }
-		add_political_power = -20
-	}
-	option = {
-		name = hol.19.b
-		ai_chance = { factor = 0 }
-				add_political_power = -100
-		declare_war_on = { target = CAF type = annex_everything }
-	}
-}
-
-country_event = { #HOL reaction to GER
-	id = hol.20
-	title = hol.20.t
-	desc = hol.20.d
-
-	is_triggered_only = yes
-
-
-	option = {
-		name = hol.20.a
-		ai_chance = { factor = 100 }
-		GER = { set_state_owner = 669 }
-		GER = { set_state_owner = 334 }
-		GER = { set_state_owner = 672 }
-		GER = { set_state_controller = 669 }
-		GER = { set_state_controller = 334 }
-		GER = { set_state_controller = 672 }
-		add_political_power = -20
-	}
-	option = {
-		name = hol.20.b
-		ai_chance = { factor = 0 }
-		declare_war_on = { target = GER type = annex_everything }
-		add_political_power = -100
-	}
-}
-
-country_event = { #HOL reaction to AST
-	id = hol.21
-	title = hol.21.t
-	desc = hol.21.d
-
-	is_triggered_only = yes
-
-
-	option = {
-		name = hol.21.a
-		ai_chance = { factor = 100 }
-		AST = { set_state_owner = 667 }
-		AST = { set_state_owner = 738 }
-		AST = { set_state_controller = 667 }
-		AST = { set_state_controller = 738 }
-		add_political_power = -20
-	}
-	option = {
-		name = hol.21.b
-		ai_chance = { factor = 0 }
-		add_political_power = -100
-		declare_war_on = { target = AST type = annex_everything }
-	}
-}
-
-country_event = { #HOL joins Entente
-	id = hol.22
-	title = hol.22.t
-	desc = hol.22.d
-
-	is_triggered_only = yes
-
-
-	option = {
-		name = hol.22.a
-		ai_chance = { factor = 90 }
-		CAN = { add_to_faction = HOL }
-	}
-	option = {
-		name = hol.22.b
-		ai_chance = { factor = 10 }
-		add_political_power = -20
-		HOL = { country_event = { days = 1 id = hol.29 } }
-	}
-}
-
-country_event = { #HOL joins Mittleuropa
-	id = hol.23
-	title = hol.23.t
-	desc = hol.23.d
-
-	is_triggered_only = yes
-
-
-	option = {
-		name = hol.23.a
-		ai_chance = { factor = 90 }
-		GER = { add_to_faction = HOL }
-	}
-	option = {
-		name = hol.23.b
-		ai_chance = { factor = 10 }
-		add_political_power = -20
-		HOL = { country_event = { days = 1 id = hol.31 } }
-	}
-}
 
 country_event = { #Dutch Indies Autonomy?
-	id = hol.32
-	title = hol.32.t
-	desc = hol.32.d
-
+	id = holdei.2
+	title = holdei.2.t
+	desc = holdei.2.d
+	
 	is_triggered_only = yes
-
+	
 	option = {
-		name = hol.32.a
+		name = holdei.2.a 
 		ai_chance = { factor = 60 }
-		add_political_power = -50
+		add_political_power = -50 
 		hidden_effect = { set_country_flag = HOL_aut }
 	}
 	option = {
-		name = hol.32.b
+		name = holdei.2.b
 		ai_chance = { factor = 40 }
 		add_manpower = -10000
 		add_national_unity = -0.05
 		hidden_effect = { set_country_flag = HOL_aut2 }
 	}
+}	
+
+###################################
+# Focus events - starting from 200
+###################################
+country_event = { #Dutch Army Plan
+	id = hol.200
+	title = hol.200.t
+	desc = hol.200.d
+	picture = HOL_general_staff
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hol.200.a 
+		ai_chance = { factor = 40 }
+		hidden_effect = { set_country_flag = HOL_army_defensive }
+	}
+	option = {
+		name = hol.200.b
+		ai_chance = { factor = 40 }
+		hidden_effect = { set_country_flag = HOL_army_mobile }
+	}
+		option = {
+		name = hol.200.c
+		ai_chance = { factor = 20 }
+		hidden_effect = { set_country_flag = HOL_army_specialist }
+	}
+   }
+
+country_event = { #Dutch Navy Plan
+	id = hol.201
+	title = hol.201.t
+	desc = hol.201.d
+	picture = HOL_admirality
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hol.201.a 
+		ai_chance = { factor = 40 }
+		hidden_effect = { set_country_flag = HOL_navy_trade }
+	}
+	option = {
+		name = hol.201.b
+		ai_chance = { factor = 40 }
+		hidden_effect = { set_country_flag = HOL_navy_fib }
+	}
+		option = {
+		
+		name = hol.201.c
+		ai_chance = { factor = 20 }
+		hidden_effect = { set_country_flag = HOL_navy_basestrike }
+	}
+   }
+
+   country_event = { #Willemstad refinery
+	id = hol.202
+	title = hol.202.t
+	desc = hol.202.d
+	picture = HOL_willemstad_refinery
+	
+	is_triggered_only = yes
+	
+	option = { #We can never have enough oil, proceed!
+		name = hol.202.a 
+		ai_chance = { factor = 90 }
+		custom_effect_tooltip = HOL_willemstad_refinery
+		HOL = {
+			hidden_effect = { country_event = { id = hol.203 days = 210 } }
+		}
+	}
+	option = { #Actually, we have enough oil already
+		name = hol.202.b
+		ai_chance = { factor = 10 }
+		}
+	}
+	country_event = { #Willemstad refinery completed!
+	id = hol.203
+	title = hol.203.t
+	desc = hol.203.d
+	picture = HOL_willemstad_refinery
+	
+	is_triggered_only = yes
+	
+	option = { #Driewerf Hoera!
+		name = hol.203.a 
+				add_resource = { type = oil amount = 11 state = 695}
+			695 = {
+					add_building_construction = {
+							type = naval_base
+							level = 1
+							instant_build = yes
+					}
+				}
+		    }
+		}
+	
+	country_event = { #Search for resources
+	id = holfocus.4
+	title = holfocus.4.t
+	desc = holfocus.4.d
+	picture = HOL_mijnbouw
+	
+	is_triggered_only = yes
+	
+	option = { #Steel in Limburg
+		name = holfocus.4.a 
+		ai_chance = { factor = 45 }
+		custom_effect_tooltip = HOL_search_steel
+		HOL = {
+			hidden_effect = { country_event = { id = holfocus.5 days = 90 } } }
+		    }
+			
+		option = { #Tungsten in Brabant
+		ai_chance = { factor = 45 }
+		name = holfocus.4.b 
+		custom_effect_tooltip = HOL_search_tungsten
+		HOL = {
+			hidden_effect = { country_event = { id = holfocus.6 days = 90 } } }
+		    }
+			
+		option = { #Both!
+		ai_chance = { factor = 10 }
+		name = holfocus.4.c
+		custom_effect_tooltip = HOL_search_tungsten_and_steel
+		add_political_power = -100
+		HOL = {
+			hidden_effect = { country_event = { id = holfocus.5 days = 90 } } }
+			hidden_effect = { country_event = { id = holfocus.6 days = 120 } } 
+			}
+		}	
+	
+	country_event = { #Steel in Limburg
+	id = holfocus.5
+	title = holfocus.5.t
+	desc = holfocus.5.d
+	picture = HOL_mijnbouw
+	
+	is_triggered_only = yes
+	
+	option = { #Fantastisch
+		name = holfocus.5.a 
+				add_resource = { type = steel amount = 12 state = 35}
+		    }
+		}
+
+	country_event = { #Tungsten in Brabant
+	id = holfocus.6
+	title = holfocus.6.t
+	desc = holfocus.6.d
+	picture = HOL_mijnbouw
+	
+	is_triggered_only = yes
+	
+	option = { #Heerlijk
+		name = holfocus.6.a 
+				add_resource = { type = tungsten amount = 12 state = 35}
+		    }
+		}		
+
+country_event = { #Vesting Holland start
+	id = holfocus.7
+	title = holfocus.7.t
+	desc = holfocus.7.d
+
+	is_triggered_only = yes
+	
+	option = { #Begin!
+		name = holfocus.7.a
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = HOL_vesting_holland_begin
+		add_ideas = HOL_vesting_holland_construction
+		hidden_effect = { country_event = { id = holfocus.8 days = 365 } }
+		}
+	}
+		
+country_event = { #Vesting Holland phase 1 complete
+	id = holfocus.8
+	title = holfocus.8.t
+	desc = holfocus.8.d
+
+	is_triggered_only = yes
+	
+	option = { #Voortreffelijk!
+		name = holfocus.8.a
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = HOL_vesting_holland_phase2
+		hidden_effect = { country_event = { id = holfocus.9 days = 270 } }
+		
+		
+			9498 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							instant_build = yes
+				}
+			}
+			13544 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							instant_build = yes
+				}
+			}
+			391 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							instant_build = yes
+				}
+			}
+			3314 = {
+					add_building_construction = {
+							type = bunker
+							level = 1
+							instant_build = yes
+				}
+			}			
+		}
+	}
+
+country_event = { #Vesting Holland phase 2 complete
+	id = holfocus.9
+	title = holfocus.9.t
+	desc = holfocus.9.d
+
+	is_triggered_only = yes
+	
+	option = { #We can sleep easy at night now!
+		name = holfocus.9.a
+		ai_chance = { factor = 100 }
+		remove_ideas = HOL_vesting_holland_construction
+			
+			9498 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							instant_build = yes
+				}
+			}
+			13544 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							instant_build = yes
+				}
+			}
+			391 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							instant_build = yes
+				}
+			}
+			3314 = {
+					add_building_construction = {
+							type = bunker
+							level = 2
+							instant_build = yes
+				}
+			}			
+		}
+	}
+
+###################################
+# Focus events - foreign equipment purchase
+###################################
+
+country_event = { #Procure Germany to buy tanks
+	id = hol.301
+	title = hol.301.t
+	desc = hol.301.d
+
+	is_triggered_only = yes
+	
+	option = { #Only buy tanks
+		name = hol.301.a 
+		ai_chance = { factor = 45 }
+		GER = {
+			country_event = { id = hol.302 days = 7 } 
+		}
+	}
+		option = {#Buy tanks and production license
+		name = hol.301.b
+		ai_chance = { factor = 45 }
+		GER = {
+			country_event = { id = hol.303 days = 7 } 
+		}
+	}
+		option = { #It is too expensive!
+		name = hol.301.c
+		ai_chance = { factor = 5 }
+	}
 }
 
+country_event = { #The Dutch want to buy Panzers
+	id = hol.302
+	title = hol.302.t
+	desc = hol.302.d
+
+	is_triggered_only = yes
+	
+	option = { #Agree
+		name = hol.302.a 
+		ai_chance = { factor = 70 }
+		HOL = {
+			country_event = { id = hol.304 days = 7 } 
+		}
+	}
+		option = {#Disagree, what if they use them against us?
+		name = hol.302.b
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = { #The Dutch want to buy Panzers and a license
+	id = hol.303
+	title = hol.303.t
+	desc = hol.303.d
+
+	is_triggered_only = yes
+	
+	option = {
+		name = hol.303.a 
+		ai_chance = { factor = 60 }
+		HOL = {
+			country_event = { id = hol.305 days = 30 } 
+		}
+	}
+	
+		option = {#Disagree, what if they use them against us?
+		name = hol.303.b
+		ai_chance = { factor = 40 }
+	}
+}
+
+country_event = { #Germany will sell us Panzers!
+	id = hol.304
+	title = hol.304.t
+	desc = hol.304.d
+
+	is_triggered_only = yes
+	
+	option = { #Geweldig!
+		name = hol.304.a 
+		ai_chance = { factor = 100 }
+				HOL = {
+			country_event = { id = hol.306 days = 30 } 
+		}
+	}
+}
+	
+country_event = { #Germany will sell us Panzers and a license!
+	id = hol.305
+	title = hol.305.t
+	desc = hol.305.d
+
+	is_triggered_only = yes
+	
+	option = { #Geweldig!
+		name = hol.305.a 
+		ai_chance = { factor = 100 }
+				HOL = {
+		country_event = { id = hol.306 days = 30 }
+		add_ideas = HOL_german_tank_design
+		}
+	}
+}
+
+country_event = { #German Panzers Arrive
+	id = hol.306
+	title = hol.306.t
+	desc = hol.306.d
+	picture = HOL_panzer1
+
+	is_triggered_only = yes
+	
+	option = { #Geweldig!
+		name = hol.306.a 
+		ai_chance = { factor = 100 }
+		load_oob = HOL_panzer_purchase
+	}
+}
+
+country_event = { #Germany refuses to sell us tanks!
+	id = hol.307
+	title = hol.307.t
+	desc = hol.307.d
+
+	is_triggered_only = yes
+	
+	option = { #Onfortuinlijk
+		name = hol.307.a 
+		}
+	}	
+	
+###################################
+# Focus events - Naval research and expansion events
+###################################
+country_event = { #Heavy Cruisers design
+	id = holnavy.1
+	title = holnavy.1.t
+	desc = holnavy.1.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.1.a 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.8 days = 70 } 
+	}
+		option = { #We need fast and manouvrable ships
+		name = holnavy.1.b 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.9 days = 70 }
+		add_ideas = HOL_heavy_cruiser_design_1
+	}
+		option = { #Use larger calibre guns
+		name = holnavy.1.c 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.10 days = 70 } 
+		add_ideas = HOL_heavy_cruiser_design_2
+	}
+		option = { #We need ships indeed, but they are expansive! Cut costs where possible!
+		name = holnavy.1.e 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.11 days = 70 }
+		add_ideas = HOL_heavy_cruiser_design_3		
+	}
+}
+
+country_event = { #Light Cruisers design
+	id = holnavy.2
+	title = holnavy.2.t
+	desc = holnavy.2.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #Flotilla leaders for our destroyers
+		name = holnavy.2.a 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.34 days = 70 } 
+	}
+		option = { #A fast design to attack enemy convoys with
+		name = holnavy.2.b 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.12 days = 70 } 
+	}
+		option = { #Anti air support for our larger ships is what we need
+		name = holnavy.2.c 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.13 days = 70 } 
+	}
+		option = { #We need ships indeed, but they are expansive! Cut costs where possible!
+		name = holnavy.2.e 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.14 days = 70 } 
+	}
+   }
+
+country_event = { #Battlecruisers design
+	id = holnavy.3
+	title = holnavy.3.t
+	desc = holnavy.3.d
+	
+	is_triggered_only = yes
+	
+	option = { #Optie 1
+		name = holnavy.3.a 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.15 days = 70 } 
+	}
+		option = { #Optie 2
+		name = holnavy.3.b 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.16 days = 70 } 
+	}
+		option = { #Optie 3
+		name = holnavy.3.c 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.17 days = 70 } 
+	}
+		option = { #Optie 4
+		name = holnavy.3.e 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.18 days = 70 } 
+	}
+   }
+
+country_event = { #Battleships design
+	id = holnavy.4
+	title = holnavy.4.t
+	desc = holnavy.4.d
+	
+	is_triggered_only = yes
+	
+	option = { #Optie 1
+		name = holnavy.4.a 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.33 days = 70 } 
+	}
+		option = { #Optie 2
+		name = holnavy.4.b 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.19 days = 70 } 
+	}
+		option = { #Optie 3
+		name = holnavy.4.c 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.20 days = 70 } 
+	}
+		option = { #Optie 4
+		name = holnavy.4.e 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.32 days = 70 } 
+	}
+   }
+
+country_event = { #Carriers design
+	id = holnavy.5
+	title = holnavy.5.t
+	desc = holnavy.5.d
+	picture = HOL_vliegdekschip
+	
+	is_triggered_only = yes
+	
+	option = { #Optie 1
+		name = holnavy.5.a 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.21 days = 70 } 
+	}
+		option = { #Optie 2
+		name = holnavy.5.b 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.22 days = 70 } 
+	}
+		option = { #Optie 3
+		name = holnavy.5.c 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.23 days = 70 } 
+	}
+		option = { #Optie 4
+		name = holnavy.5.e 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.24 days = 70 } 
+	}
+   }
+
+country_event = { #Submarines design
+	id = holnavy.6
+	title = holnavy.6.t
+	desc = holnavy.6.d
+	picture = HOL_o19
+	
+	is_triggered_only = yes
+	
+	option = { #Optie 1
+		name = holnavy.6.a 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.25 days = 70 } 
+	}
+		option = { #Optie 2
+		name = holnavy.6.b 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.26 days = 70 } 
+	}
+		option = { #Optie 3
+		name = holnavy.6.c 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.27 days = 70 } 
+	}
+		option = { #Optie 3
+		name = holnavy.6.e 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.35 days = 70 } 
+	}
+   }
+
+country_event = { #Destroyers design
+	id = holnavy.7
+	title = holnavy.7.t
+	desc = holnavy.7.d
+	picture = HOL_torpedoboot
+	
+	is_triggered_only = yes
+	
+	option = { #Optie 1
+		name = holnavy.7.a 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.28 days = 70 } 
+	}
+		option = { #Optie 2
+		name = holnavy.7.b 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.29 days = 70 } 
+	}
+		option = { #Optie 3
+		name = holnavy.7.c 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.30 days = 70 } 
+	}
+		option = { #Optie 4
+		name = holnavy.7.e 
+		ai_chance = { factor = 25 }
+		country_event = { id = holnavy.31 days = 70 }
+	}
+   }
+
+###################################
+# Focus events - Naval research and expansion events - Heavy Cruisers: holnavy 8 - 11
+###################################
+
+country_event = { #Pantserschip design ready
+	id = holnavy.8
+	title = holnavy.8.t
+	desc = holnavy.8.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #Mooi!
+		name = holnavy.8.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+country_event = { #Speed over armour
+	id = holnavy.9
+	title = holnavy.9.t
+	desc = holnavy.9.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #Mooi!
+		name = holnavy.9.a
+		trigger = {
+		has_tech = early_heavy_cruiser 
+		NOT = { has_tech = basic_heavy_cruiser }
+		AND = { NOT = { has_tech = improved_heavy_cruiser } }}  		
+		ai_chance = { factor = 100 }
+		set_technology = { basic_heavy_cruiser = 1 }
+	}
+	
+	option = { #Mooi!
+		name = holnavy.9.b
+		trigger = {
+		has_tech = basic_heavy_cruiser
+		AND = { has_tech = early_heavy_cruiser } 
+		NOT = { has_tech = improved_heavy_cruiser } } 
+		ai_chance = { factor = 100 }
+		set_technology = { improved_heavy_cruiser = 1 }
+	}
+	
+	option = { #Mooi!
+		name = holnavy.9.c
+		trigger = {
+		has_tech =  improved_heavy_cruiser 
+		AND = { has_tech = basic_heavy_cruiser }
+		AND = { has_tech = early_heavy_cruiser }}  
+		ai_chance = { factor = 100 }
+		set_technology = { advanced_heavy_cruiser = 1 }
+	}
+}
+
+country_event = { #Guns over speed
+	id = holnavy.10
+	title = holnavy.10.t
+	desc = holnavy.10.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #Mooi!
+		name = holnavy.10.a
+		trigger = {
+		has_tech = early_heavy_cruiser 
+		NOT = { has_tech = basic_heavy_cruiser }
+		AND = { NOT = { has_tech = improved_heavy_cruiser } }}  		
+		ai_chance = { factor = 100 }
+		set_technology = { basic_heavy_cruiser = 1 }
+	}
+	
+	option = { #Mooi!
+		name = holnavy.10.b
+		trigger = {
+		has_tech = basic_heavy_cruiser
+		AND = { has_tech = early_heavy_cruiser } 
+		NOT = { has_tech = improved_heavy_cruiser } } 
+		ai_chance = { factor = 100 }
+		set_technology = { improved_heavy_cruiser = 1 }
+	}
+	
+	option = { #Mooi!
+		name = holnavy.10.c
+		trigger = {
+		has_tech =  improved_heavy_cruiser 
+		AND = { has_tech = basic_heavy_cruiser }
+		AND = { has_tech = early_heavy_cruiser }}  
+		ai_chance = { factor = 100 }
+		set_technology = { advanced_heavy_cruiser = 1 }
+	}
+}
+country_event = { #Costs over everything!
+	id = holnavy.11
+	title = holnavy.11.t
+	desc = holnavy.11.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+		option = { #Mooi!
+		name = holnavy.11.a
+		trigger = {
+		has_tech = early_heavy_cruiser 
+		NOT = { has_tech = basic_heavy_cruiser }
+		AND = { NOT = { has_tech = improved_heavy_cruiser } }}  		
+		ai_chance = { factor = 100 }
+		set_technology = { basic_heavy_cruiser = 1 }
+	}
+	
+	option = { #Mooi!
+		name = holnavy.11.b
+		trigger = {
+		has_tech = basic_heavy_cruiser
+		AND = { has_tech = early_heavy_cruiser } 
+		NOT = { has_tech = improved_heavy_cruiser } } 
+		ai_chance = { factor = 100 }
+		set_technology = { improved_heavy_cruiser = 1 }
+	}
+	
+	option = { #Mooi!
+		name = holnavy.11.c
+		trigger = {
+		has_tech =  improved_heavy_cruiser 
+		AND = { has_tech = basic_heavy_cruiser }
+		AND = { has_tech = early_heavy_cruiser }}  
+		ai_chance = { factor = 100 }
+		set_technology = { advanced_heavy_cruiser = 1 }
+	}
+}
+
+####################################
+# Focus events - Naval research and expansion events - Light Cruisers: holnavy 34 & 12 - 14
+###################################
+
+country_event = { #
+	id = holnavy.34
+	title = holnavy.34.t
+	desc = holnavy.34.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = holnavy.34.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+country_event = { #
+	id = holnavy.12
+	title = holnavy.12.t
+	desc = holnavy.12.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = holnavy.12.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+country_event = { #
+	id = holnavy.13
+	title = holnavy.13.t
+	desc = holnavy.13.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = holnavy.13.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+country_event = { #
+	id = holnavy.14
+	title = holnavy.14.t
+	desc = holnavy.14.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = holnavy.14.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+
+####################################
+# Focus events - Naval research and expansion events - Battlecruisers: holnavy 15 - 18
+###################################
+
+country_event = { #
+	id = holnavy.15
+	title = holnavy.15.t
+	desc = holnavy.15.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.15.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+country_event = { #
+	id = holnavy.16
+	title = holnavy.16.t
+	desc = holnavy.16.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.16.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+country_event = { #
+	id = holnavy.17
+	title = holnavy.17.t
+	desc = holnavy.17.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.17.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+country_event = { #
+	id = holnavy.18
+	title = holnavy.18.t
+	desc = holnavy.18.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.18.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+
+####################################
+# Focus events - Naval research and expansion events - Battleships: holnavy 33 - 19 - 20 - 32 woops
+###################################
+
+country_event = { #
+	id = holnavy.33
+	title = holnavy.33.t
+	desc = holnavy.33.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.33.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+country_event = { #
+	id = holnavy.19
+	title = holnavy.19.t
+	desc = holnavy.19.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.19.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+country_event = { #
+	id = holnavy.20
+	title = holnavy.20.t
+	desc = holnavy.20.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.20.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+country_event = { #
+	id = holnavy.32
+	title = holnavy.32.t
+	desc = holnavy.32.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.32.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+
+####################################
+# Focus events - Naval research and expansion events - Carriers: holnavy 21 - 24
+###################################
+
+country_event = { #
+	id = holnavy.21
+	title = holnavy.21.t
+	desc = holnavy.21.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.21.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+country_event = { #
+	id = holnavy.22
+	title = holnavy.22.t
+	desc = holnavy.22.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.22.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+country_event = { #
+	id = holnavy.23
+	title = holnavy.23.t
+	desc = holnavy.23.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.23.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+country_event = { #
+	id = holnavy.24
+	title = holnavy.24.t
+	desc = holnavy.24.d
+	picture = HOL_lichte_kruiser
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.24.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+
+####################################
+# Focus events - Naval research and expansion events - submarines: holnavy 25 - 28
+###################################
+
+country_event = { #
+	id = holnavy.25
+	title = holnavy.25.t
+	desc = holnavy.25.d
+	picture = HOL_o19
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.25.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+country_event = { #
+	id = holnavy.26
+	title = holnavy.26.t
+	desc = holnavy.26.d
+	picture = HOL_o19
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.26.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+country_event = { #
+	id = holnavy.27
+	title = holnavy.27.t
+	desc = holnavy.27.d
+	picture = HOL_o19
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.27.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+
+####################################
+# Focus events - Naval research and expansion events - destroyers: holnavy 28 - 31
+###################################
+
+country_event = { #
+	id = holnavy.28
+	title = holnavy.28.t
+	desc = holnavy.28.d
+	picture = HOL_o19
+	
+	is_triggered_only = yes
+	
+	option = { #Kanoneerboten design ready
+		name = holnavy.28.a 
+		ai_chance = { factor = 100 }
+		set_technology = { kanoneerboot_tech = 1 }
+	}
+}
+country_event = { #
+	id = holnavy.29
+	title = holnavy.29.t
+	desc = holnavy.29.d
+	picture = HOL_o19
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.29.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+country_event = { #
+	id = holnavy.30
+	title = holnavy.30.t
+	desc = holnavy.30.d
+	picture = HOL_o19
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.30.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+country_event = { #
+	id = holnavy.31
+	title = holnavy.31.t
+	desc = holnavy.31.d
+	picture = HOL_o19
+	
+	is_triggered_only = yes
+	
+	option = { #Build modern Pantserschepen
+		name = holnavy.31.a 
+		ai_chance = { factor = 100 }
+		set_technology = { pantserschip_tech = 1 }
+	}
+}
+#### Let op: ga verder vanaf 35
+ 
+
+		

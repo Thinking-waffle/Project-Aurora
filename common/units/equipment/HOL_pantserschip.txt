@@ -1,0 +1,58 @@
+equipments = {
+
+	pantserschip = {
+		is_archetype = yes
+		is_buildable = no
+		type = capital_ship
+		group_by = archetype
+		
+		interface_category = interface_category_capital_ships
+		
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}
+
+		ap_attack = 10
+		attack = 14
+		fire_range = 33.6
+		torpedo_attack = 0
+		shore_bombardment = 8
+
+		anti_air_attack = 3.15
+		
+		armor_value = 6
+		evasion = 15
+		
+		surface_detection = 15
+		sub_detection = 0
+		surface_visibility = 25
+		naval_speed = 28.6
+		reliability = 0.9
+
+		naval_range = 3300
+		
+		max_strength = 250
+		
+		port_capacity_usage = 1.5
+		
+		build_cost_ic = 11500
+		resources = {
+			oil = 1
+			steel = 2
+			chromium = 1
+		}
+		
+		manpower = 1650
+	}
+	
+	pantserschip_eq = {
+		archetype = pantserschip
+		priority = 50
+	}
+	
+
+	
+}
