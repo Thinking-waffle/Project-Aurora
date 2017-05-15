@@ -2047,6 +2047,15 @@ focus_tree = {
 		id = CSA_yankee_strike
 		icon = GFX_goal_tfv_sever_ties_with_uk
 		cost = 10.00
+		bypass = {
+			OR = {
+				NOT = { country_exists = NEE }
+				AND = {
+					357 = {	is_owned_by = CSA }
+					796 = {	is_owned_by = CSA }
+				}
+			}				
+		}		
 		prerequisite = {
 			focus = CSA_reclaiming_america
 		}
@@ -2060,6 +2069,19 @@ focus_tree = {
 		id = CSA_californian_strike
 		icon = GFX_focus_RAJ_clamp_down_on_corruption
 		cost = 10.00
+		bypass = {
+			OR = {
+				NOT = { country_exists = CAL }
+				AND = {	
+					386 = {	is_owned_by = CSA }
+					385 = {	is_owned_by = CSA }
+					378 = {	is_owned_by = CSA }
+					829 = {	is_owned_by = CSA }
+					797 = {	is_owned_by = CSA }	
+					798 = {	is_owned_by = CSA }
+				}				
+			}
+		}				
 		prerequisite = {
 			focus = CSA_reclaiming_america
 		}
@@ -2163,6 +2185,7 @@ focus_tree = {
 		id = CSA_haitian_intervention
 		icon = GFX_goal_haiti
 		cost = 10.00
+		bypass = { NOT = { country_exists = HAI } }			
 		prerequisite = {
 			focus = CSA_cuban_intervnetion
 		}
@@ -2200,6 +2223,7 @@ focus_tree = {
 		id = CSA_dominican_interventiom
 		icon = GFX_goal_dominicanrep
 		cost = 10.00
+		bypass = { NOT = { country_exists = DOM } }		
 		prerequisite = {
 			focus = CSA_haitian_intervention
 		}
@@ -2909,10 +2933,13 @@ focus_tree = {
 		icon = GFX_goal_continuous_increase_nu
 		cost = 10.00
 		prerequisite = {
-			focus = CSA_new_england
+			focus = CSA_the_west
 		}
 		prerequisite = {
-			focus = CSA_the_pacific_coast
+			focus = CSA_the_midwest
+		}
+		prerequisite = {
+			focus = CSA_the_south
 		}
 		x = 20
 		y = 11
@@ -2947,8 +2974,14 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = CSA_reconstruction_policy
 			remove_ideas = recovering_from_acw
-			add_political_power = 250
-			add_national_unity = 0.05
+			if = {
+				limit = {
+					has_completed_focus = CSA_new_england
+					has_completed_focus = CSA_the_pacific_coast					
+				}
+				add_political_power = 250
+				add_national_unity = 0.05
+			}			
 		}
 	}
 }
