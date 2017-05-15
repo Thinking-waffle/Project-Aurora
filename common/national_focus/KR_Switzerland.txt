@@ -50,7 +50,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_syndicalist_unions
-		icon = GFX_BRA_congress
+		icon = GFX_goal_red_star
 		cost = 10.00
 		x = 8
 		y = 0
@@ -66,7 +66,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_national_defense
-		icon = GFX_goal_unknown
+		icon = GFX_focus_RAJ_lions_of_the_great_war
 		cost = 10.00
 		x = 20
 		y = 0
@@ -74,7 +74,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_luftwaffe
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_build_airforce
 		cost = 10.00
 		x = 26
 		y = 0
@@ -82,7 +82,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_reverse_economic_downturn
-		icon = GFX_goal_unknown
+		icon = GFX_goal_bankruptcy
 		cost = 10.00
 		x = 34
 		y = 0
@@ -107,7 +107,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_austrian_assisstance
-		icon = GFX_goal_unknown
+		icon = GFX_goal_austria
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_romandy_crisis
@@ -121,7 +121,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_alpine_rhine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_austrian_assisstance
@@ -135,7 +135,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_italian_assisstance
-		icon = GFX_goal_flag_italianfed
+		icon = GFX_goal_italianfed
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_romandy_crisis
@@ -150,7 +150,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_swiss_guard
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_little_entente
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_italian_assisstance
@@ -164,7 +164,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_hold_the_line
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_artillery
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_swiss_guard
@@ -176,7 +176,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_economic_routes
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_hold_the_line
@@ -187,7 +187,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_international_aid
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_hold_the_line
@@ -198,7 +198,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_german_aid
-		icon = GFX_goal_flag_germany
+		icon = GFX_goal_germany
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_romandy_crisis
@@ -224,7 +224,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_retreat_redoubt
-		icon = GFX_goal_unknown
+		icon = GFX_goal_fortify_the_westwall
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_joint_command
@@ -246,7 +246,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_german_military_tactics
-		icon = GFX_goal_unknown
+		icon = GFX_goal_RUS_Markov_plan
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_german_aid
@@ -257,7 +257,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_german_economic_assisstance
-		icon = GFX_goal_unknown
+		icon = GFX_goal_molotov_ribbentrop_pact
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_german_military_tactics
@@ -268,7 +268,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_mitteleuropa
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_alliance
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_german_economic_assisstance
@@ -279,7 +279,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_bend_to_france
-		icon = GFX_goal_flag_comfrance
+		icon = GFX_goal_comfrance
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_romandy_crisis
@@ -294,7 +294,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_referendum_syndicalism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_commune_politics
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_bend_to_france
@@ -305,7 +305,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_new_government
-		icon = GFX_goal_unknown
+		icon = GFX_goal_syndicalism
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_referendum_syndicalism
@@ -316,7 +316,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_geneva_avenged
-		icon = GFX_goal_unknown
+		icon = GFX_goal_graveyard
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_new_government
@@ -327,7 +327,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_national_unions
-		icon = GFX_goal_unknown
+		icon = GFX_goal_syndicalist_industry
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_new_government
@@ -352,7 +352,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_the_government_has_failed
-		icon = GFX_goal_unknown
+		icon = GFX_goal_national_populism
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_enemies_on_all_sides
@@ -363,7 +363,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_one_people
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_dangerous_deal
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_the_government_has_failed
@@ -374,7 +374,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_defend_the_borders
-		icon = GFX_goal_unknown
+		icon = GFX_goal_national_mobilization
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_the_government_has_failed
@@ -385,7 +385,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_mandatory_service
-		icon = GFX_goal_unknown
+		icon = GFX_goal_conscription
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_defend_the_borders
@@ -396,7 +396,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_strategic_services
-		icon = GFX_goal_unknown
+		icon = GFX_goal_state_economy
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_national_defense
@@ -407,7 +407,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_fortress
-		icon = GFX_goal_unknown
+		icon = GFX_goal_liberty
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_national_defense
@@ -418,7 +418,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_guisan_plan
-		icon = GFX_goal_unknown
+		icon = GFX_goal_panzerwaffe
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_fortress
@@ -429,7 +429,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_guisan_speech
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_war_with_comintern
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_guisan_plan
@@ -440,7 +440,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_bircher_plan
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_military_sphere
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_fortress
@@ -451,7 +451,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_gotthard
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_fortify_city
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_bircher_plan
@@ -463,7 +463,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_maurice
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_military
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_gotthard
@@ -474,7 +474,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_Sargans
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_fortify_city
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_maurice
@@ -485,7 +485,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_man_borders
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_bircher_plan
@@ -496,7 +496,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_ski_divisions
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_special_forces
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_man_borders
@@ -507,7 +507,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_mountineer_defense
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construction2
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_ski_divisions
@@ -518,7 +518,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_air_academy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_molotov_ribbentrop_pact
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_luftwaffe
@@ -529,7 +529,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_mountain_airfields
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_doctrine
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_air_academy
@@ -540,7 +540,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_mountain_aa
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_production
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_mountain_airfields
@@ -551,7 +551,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_new_fighters
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_luftwaffe
@@ -562,7 +562,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_liscense_foregin_designs
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_scientific_exchange
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_new_fighters
@@ -573,7 +573,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_free_our_skies
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_air_defense
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_liscense_foregin_designs
@@ -584,7 +584,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_cross_the_border
-		icon = GFX_goal_unknown
+		icon = GFX_goal_poland_goal
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_free_our_skies
@@ -596,7 +596,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_coal_mines
-		icon = GFX_goal_unknown
+		icon = GFX_goal_production
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_reverse_economic_downturn
@@ -607,7 +607,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_cultivation_battle
-		icon = GFX_goal_unknown
+		icon = GFX_goal_agriculture
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_reverse_economic_downturn
@@ -618,7 +618,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_economic_sufficiency
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_consumer_goods
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_cultivation_battle
@@ -629,7 +629,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_national_bank
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_production2
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_reverse_economic_downturn
@@ -640,7 +640,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_gold_reserves
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_neutrality_focus
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_national_bank
@@ -651,7 +651,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_promote_franc
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_reverse_economic_downturn
@@ -662,7 +662,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_sell_war_bonds
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_the_giant_wakes
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_promote_franc
@@ -673,7 +673,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_swiss_miracle
-		icon = GFX_goal_unknown
+		icon = GFX_focus_research
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_sell_war_bonds
@@ -690,7 +690,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_trans_alpine_tunnels
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_reverse_economic_downturn
@@ -715,7 +715,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_ban_all_foreigners
-		icon = GFX_goal_unknown
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_one_people
@@ -726,7 +726,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_abolish_the_verdingkinder
-		icon = GFX_goal_unknown
+		icon = GFX_goal_ideology_radical_socialist
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_geneva_avenged
@@ -737,7 +737,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_swiss_french_alliance
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_attack_allies
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_national_unions
@@ -748,7 +748,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_bullet_or_bayonet
-		icon = GFX_goal_unknown
+		icon = GFX_goal_offensive_army
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_guisan_speech
@@ -759,7 +759,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_resist_to_the_end
-		icon = GFX_goal_unknown
+		icon = GFX_goal_anti_comintern_pact
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_bullet_or_bayonet
@@ -770,7 +770,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_formalize_volunteers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_allies_build_infantry
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_international_aid
@@ -781,7 +781,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_new_swiss_army
-		icon = GFX_goal_unknown
+		icon = GFX_goal_rhineland
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_resist_to_the_end
@@ -794,7 +794,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SWI_war_profiteering
-		icon = GFX_goal_unknown
+		icon = GFX_goal_munitions_factories
 		cost = 10.00
 		prerequisite = {
 			focus = SWI_reverse_economic_downturn
