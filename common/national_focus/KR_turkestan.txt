@@ -42,17 +42,17 @@ focus_tree = {
 
 	#Focus for - Proclaim a Caliphate
 	focus = {
-		id =proclaimacaliphate
-		icon =GFX_goal_generic_forceful_treaty
+		id = TRK_proclaimacaliphate
+		icon = GFX_goal_generic_forceful_treaty
 		ai_will_do = { factor = 0}
 		x =3
 		y =2
-		prerequisite = { focus = conflictincentralasia}
+		prerequisite = { focus = TRK_conflictincentralasia}
 		available = { has_country_flag = TRK_unlock_caliphate_focus }
 		cost = 10 
 		 available_if_capitulated = yes 
 		completion_reward = {
-
+			set_cosmetic_tag = TUR_caliphate_totalist
 		}
 	}
 
