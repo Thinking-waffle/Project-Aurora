@@ -1,0 +1,272 @@
+focus_tree = {
+	id = turkestan
+	country = {
+		factor=0
+		modifier = {
+			add = 10
+			tag = TRK
+		}
+	}
+	
+	default = no
+
+#Focus for - Militarization
+	focus = {
+		id = TRK_militarization
+		icon = GFX_goal_generic_small_arms
+		bypass = {}
+		ai_will_do = { factor = 5 }
+		x =2
+		y =0
+		mutually_exclusive = { focus = protectstatusquo}
+		prerequisite = { }
+		available = {  }
+		cost = 10 
+		 available_if_capitulated = yes 
+		completion_reward = {
+			add_ideas = TRK_militarization_focus
+		}
+	}
+
+#Focus for - Interventionism
+focus = {
+id =interventionism
+icon =GFX_goal_generic_political_pressure
+bypass = {}
+ai_will_do = { factor = 0}
+x =5
+y =1
+mutually_exclusive = { }
+prerequisite = { focus = protectstatusquo}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+
+}
+}
+#Focus for - Consumerism
+focus = {
+id =consumerism
+icon =GFX_goal_generic_consumer_goods
+bypass = {}
+ai_will_do = { factor = 0}
+x =7
+y =1
+mutually_exclusive = { }
+prerequisite = { focus = industrialization}
+ prerequisite = { focus =protectstatusquo}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+
+}
+}
+#Focus for - Central Asian Railway
+focus = {
+id =centralasianrailway
+icon =GFX_goal_generic_construct_infrastructure
+bypass = {}
+ai_will_do = { factor = 0}
+x =9
+y =1
+mutually_exclusive = { }
+prerequisite = { focus = industrialization}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+
+}
+}
+#Focus for - Free Trade
+focus = {
+id =freetrade
+icon =GFX_goal_generic_positive_trade_relations
+bypass = {}
+ai_will_do = { factor = 0}
+x =11
+y =1
+mutually_exclusive = { }
+prerequisite = { focus = industrialization}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+
+}
+}
+#Focus for - Industrialization
+focus = {
+id =industrialization
+icon =GFX_goal_generic_construct_civ_factory
+bypass = {}
+ai_will_do = { factor = 0}
+x =10
+y =0
+mutually_exclusive = { }
+prerequisite = { }
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+
+}
+}
+#Focus for - Protect Status Quo
+focus = {
+id =protectstatusquo
+icon =GFX_goal_generic_neutrality_focus
+bypass = {}
+ai_will_do = { factor = 0}
+x =6
+y =0
+mutually_exclusive = { }
+prerequisite = { }
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+
+}
+}
+
+#Focus for - Indian Claims
+focus = {
+id =indianclaims
+icon =GFX_goal_generic_major_war
+bypass = {}
+ai_will_do = { factor = 0}
+x =2
+y =3
+mutually_exclusive = { }
+prerequisite = { focus = proclaimacaliphate}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+
+}
+}
+#Focus for - Jihad for Russian Lands
+focus = {
+id =jihadforrussianlands
+icon =GFX_goal_generic_major_war
+bypass = {}
+ai_will_do = { factor = 0}
+x =0
+y =3
+mutually_exclusive = { }
+prerequisite = { focus = proclaimacaliphate}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+
+}
+}
+#Focus for - Proclaim a Caliphate
+focus = {
+id =proclaimacaliphate
+icon =GFX_goal_generic_forceful_treaty
+bypass = {}
+ai_will_do = { factor = 0}
+x =3
+y =2
+mutually_exclusive = { }
+prerequisite = { focus = conflictincentralasia}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+
+}
+}
+#Focus for - Regional Peace
+focus = {
+id =regionalpeace
+icon =GFX_goal_generic_neutrality_focus
+bypass = {}
+ai_will_do = { factor = 0}
+x =6
+y =3
+mutually_exclusive = { }
+prerequisite = { focus = furtherinterests}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+
+}
+}
+#Focus for - Further Interests
+focus = {
+id =furtherinterests
+icon =GFX_goal_generic_demand_territory
+bypass = {}
+ai_will_do = { factor = 0}
+x =5
+y =2
+mutually_exclusive = { }
+prerequisite = { focus = interventionism}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+
+}
+}
+#Focus for - Expand Civilian Industry
+focus = {
+id =expandcivilianindustry
+icon =GFX_goal_generic_construct_civ_factory
+bypass = {}
+ai_will_do = { factor = 0}
+x =7
+y =2
+mutually_exclusive = { }
+prerequisite = { focus = consumerism}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+
+}
+}
+#Focus for - Deal with the Russians
+focus = {
+id =dealwiththerussians
+icon =GFX_goal_generic_improve_relations
+bypass = {}
+ai_will_do = { factor = }
+x =8
+y =3
+mutually_exclusive = { }
+prerequisite = { focus = furtherinterests}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+
+}
+}
+#Focus for - Conflict in Central Asia
+focus = {
+id =conflictincentralasia
+icon =GFX_goal_generic_occypy_states_ongoing_war
+bypass = {}
+ai_will_do = { factor = }
+x =3
+y =1
+mutually_exclusive = { }
+prerequisite = { focus = militarization}
+available = {  }
+cost = 10 
+ available_if_capitulated = yes 
+completion_reward = {
+
+}
+}
+#end
+}
