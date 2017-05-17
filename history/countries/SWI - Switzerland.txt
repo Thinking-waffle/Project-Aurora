@@ -88,18 +88,17 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Henri Guisan"
-	picture = "Portrait_Switzerland_Henri_Guisan.tga"
+	portrait_path = "gfx/leaders/SWI/Portrait_Switzerland_Henri_Guisan.tga"
 	traits = { defensive_doctrine }
 	skill = 4
 	
 }
 ### Corps Commander
 create_corps_commander = { #Auto-Generated
-	name = "Borel"
-	portrait_path = "gfx/leaders/SWI/Portrait_SWI_Borel.tga"
-	traits = {
-	}
-	skill = 1
+	name = "Eugen Bircher"
+	portrait_path = "gfx/leaders/SWI/Portrait_Switzerland_Eugen_Bircher.tga"
+	traits = { hill_fighter	}
+	skill = 3
 }
 
 create_corps_commander = { #Auto-Generated
