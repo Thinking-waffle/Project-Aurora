@@ -1,4 +1,8 @@
 ﻿l_english:
+### flags ###
+
+TRK_unlock_caliphate_focus:0 "Has engaged in rebuilding the caliphate?"
+
 ### Ideas ###
 trk_sharifian_struggle:0 "Sharifian Struggle"
 trk_preparing_the_conference:0 "Preparing the Conference"

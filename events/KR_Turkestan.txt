@@ -18,6 +18,9 @@ country_event = { #####  War in central Asia!
 	}
 
 	trigger = {
+		#focus tree flag
+		has_country_flag = TRK_conflict_focus
+		#
 		tag = TRK
 		AND = {
 			has_war = yes
@@ -67,6 +70,9 @@ country_event = { ######  Border incidents & international relations
 	}
 
 	trigger = {
+		#focus tree flag
+		has_country_flag = TRK_conflict_focus
+		#
 		tag = TRK
 		ALO = {
 			exists = yes
@@ -119,6 +125,9 @@ country_event = { #Call for war
 		ALO = {
 			exists = yes
 		}
+		#focus tree flag
+		has_country_flag = TRK_conflict_focus
+		#
 		date > 1938.8.1
 		NOT = {
 			has_war = yes
@@ -443,7 +452,7 @@ country_event = {
 }
 
 
-country_event = {
+country_event = { #oh shit it's the caliphate, unlocks caliphate focus
 	id = turkestan.9
 	title = turkestan.9.t
 	desc = turkestan.9.d
@@ -460,6 +469,7 @@ country_event = {
 
 	option = {
 		name = turkestan.9.a
+		add_country_flag = TRK_unlock_caliphate_focus
 		ai_chance = {
 			factor = 85
 		}
