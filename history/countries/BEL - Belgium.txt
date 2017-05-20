@@ -123,6 +123,15 @@ create_corps_commander = {
 	skill = 2
 	
 }
+create_corps_commander = { #Auto-Generated
+	name = "Lambert Chardome"
+	portrait_path = "gfx/leaders/BEL/Portrait_BEL_Chardome.tga"
+	traits = {
+		winter_specialist
+		commando
+	}
+	skill = 2
+}
 create_corps_commander = {
 	name = "Jean Baptiste Piron"
 	picture = "Portrait_Belgium_Jean_Baptiste_Piron.tga"
@@ -142,7 +151,7 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Georges Timmermans"
 	picture = "Portrait_Belgium_Georges_Timmermans.tga"
-	traits = { spotter }
+	traits = { blockade_runner }
 	skill = 2
 }
 create_navy_leader = {
