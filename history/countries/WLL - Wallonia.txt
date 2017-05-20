@@ -116,32 +116,65 @@ create_country_leader = {
 		#
 	}
 }
-
-
-#create_corps_commander = { #Flemish gets out! REEEEEEEEEEEEE
-#	name = "Victor van Strydonck de Burkel"
-#	picture = "Portrait_Belgium_Victor_van_Strydonck_de_Burkel.tga"
-#	traits = { trait_engineer }
-#	skill = 2
-#	
-#}
-
-create_navy_leader = {
-	name = "Fritz Conrad"
-	picture = "gfx/leaders/BEL/Portrait_Belgium_Fritz_Conrad.tga"
-	traits = { spotter }
-	skill = 2
-}
-
-### Field Marshal
-create_field_marshal = { #Auto-Generated
-	name = "Léon Degrelle"
-	portrait_path = "gfx/leaders/BEL/Portrait_Belgium_LEON_DEGRELLE.tga"
+create_country_leader = {
+	name = "François Bovesse"
+	desc = "Francois Bovesse"
+	picture = "gfx/leaders/BEL/Portrait_Belgium_Francois_Bovesse.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
 	traits = {
-		defensive_doctrine
+		#
 	}
-	skill = 1
 }
+create_country_leader = {
+	name = "Auguste Buisseret"
+	desc = "Auguste Buisseret"
+	picture = "gfx/leaders/BEL/Portrait_Belgium_Auguste_Buisseret.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Hubert Pierlot"
+	desc = "Hubert Pierlot"
+	picture = "gfx/leaders/BEL/Portrait_Belgium_Hubert_Pierlot.dds"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Lambert Chardome"
+	desc = "Lambert Chardome"
+	picture = "gfx/leaders/BEL/Portrait_Belgium_Lambert_Chardome.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Léon Degrelle"
+	desc = "Léon Degrelle"
+	picture = "gfx/leaders/BEL/Portrait_Belgium_LEON_DEGRELLE.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {
+		#
+	}
+}
+### Field Marshal
+#create_field_marshal = { #Auto-Generated ###Maybe granted through event
+#	name = "Léon Degrelle"
+#	portrait_path = "gfx/leaders/BEL/Portrait_Belgium_LEON_DEGRELLE.tga"
+#	traits = {
+#		defensive_doctrine
+#	}
+#	skill = 1
+#}
 
 ### Corps Commander
 create_corps_commander = {
@@ -172,25 +205,23 @@ create_corps_commander = { #Auto-Generated
 	}
 	skill = 2
 }
+#create_corps_commander = { #Auto-Generated ###Maybe granted through event
+#	name = "John Hagemans"
+#	portrait_path = "gfx/leaders/BEL/Portrait_BEL_Hagemans.tga" #Not existing yet
+#	traits = {
+#		commando
+#	}
+#	skill = 1
+#}
 
-create_corps_commander = { #Auto-Generated
-	name = "John Hagemans"
-	portrait_path = "gfx/leaders/BEL/Portrait_BEL_Hagemans.tga" #Not existing yet
-	traits = {
-		commando
-	}
-	skill = 1
-}
-
-create_corps_commander = { #Auto-Generated
-	name = "Lucien Lippert"
-	portrait_path = "gfx/leaders/BEL/Portrait_BEL_Lippert.tga" #Not existing yet
-	traits = {
-		winter_specialist
-	}
-	skill = 1
-}
-
+#create_corps_commander = { #Auto-Generated ###Maybe granted through event
+#	name = "Lucien Lippert"
+#	portrait_path = "gfx/leaders/BEL/Portrait_BEL_Lippert.tga" #Not existing yet
+#	traits = {
+#		winter_specialist
+#	}
+#	skill = 1
+#}
 ### Navy Leader
 create_navy_leader = {
 	name = "Lambert Robins"
@@ -202,15 +233,6 @@ create_navy_leader = { #Auto-Generated #Not sure who this is
 	name = "Victor Billet"
 	portrait_path = "gfx/leaders/WLL/Portrait_WLL_Vermeire.tga" #change portrait or find someone else
 	traits = {
-	}
-	skill = 1
-}
-
-create_navy_leader = { #Auto-Generated #Not sure who this is
-	name = "Wieting"
-	portrait_path = "gfx/leaders/WLL/Portrait_WLL_Wieting.tga" 
-	traits = {
-		seawolf
 	}
 	skill = 1
 }
